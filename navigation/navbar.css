@@ -1,0 +1,9 @@
+
+#header li{
+    list-style: none;
+}
+#header a{
+    text-decoration: none;
+    font: 13px Futura,sans-sarif;
+    color: #000000;
+}
