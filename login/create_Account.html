@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account-Bluefly</title>
+    <link rel="shortcut icon" href="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/bluefly_ico_new_32x32.png?v=1613180452" type="image/x-icon">
+</head>
+<style>
+      #parent>h1{
+            text-align: center;
+            font-size: 40px;
+            font-family: serif;
+            font-weight: 400;
+           letter-spacing: 2px;
+           width: fit-content;
+           margin: auto;
+        }
+        #parent{
+            
+            width:50%;
+            height: auto;
+            padding: 1%;
+           
+            margin: auto;
+          
+        }
+        #parent>div{
+            width: 70%;
+            margin: auto;
+            height: 400px;
+        }
+        #parent input,#parent label{
+            width: 90%;
+           display: block;
+           margin: 4% auto 5% auto;
+          height: 37px;
+        }
+        #parent label{
+            margin-top: 30px;
+            margin-bottom: -30px;
+           letter-spacing: 4px;
+           font-size: smaller;
+           font-family: 'Times New Roman', Times, serif;
+         
+        }
+        #parent>div> form>input:nth-child(10){
+            width: 93%;
+            margin-top: 5%;
+            letter-spacing: 4px;
+            background-color: #000;
+            color: white;
+           
+        }
+        #parent>div> form>input:nth-child(4), #parent>div> form>input:nth-child(6), #parent>div> form>input:nth-child(2), #parent>div> form>input:nth-child(8){
+           font-size:medium;
+           border-width: thin;
+           border-color: gainsboro;
+           box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+         
+        }
+        #parent>div> form>input:nth-child(4):focus, #parent>div> form>input:nth-child(2):focus, #parent>div> form>input:nth-child(6):focus, #parent>div> form>input:nth-child(8):focus{
+            border: 1px solid;
+            border-width: 0.5;
+        }
+      #f_table{
+        width: 80%;
+        margin: auto;
+       height: 37px;
+      }
+      #f_table>tr,#f_table>tr>td{
+        height: inherit;
+      }
+     #cbox_s{
+        margin: auto;
+        
+        text-align: center;
+       height: 100%;
+       font-size: 17px;
+        font-family: serif;
+        margin-top: 15px;
+     }      
+</style>
+<body>
+    <div id="parent">
+        <h1>CREATE ACCOUNT</h1>
+        <div>
+            
+            <form id="login">
+                <label >FIRST NAME</label>
+                <input type="text" id="f_name">
+                <label >LAST NAME</label>
+                <input type="text" id="l_name">
+                <label >EMAIL</label>
+                <input type="email" id="mail">
+                <label>PASSWORD</label>
+                <input type="password" id="password">
+               <table id="f_table">
+                <tr>
+                    <td> <input type="checkbox" ></td>
+                    <td>  <p id="cbox_s"> Subscribe to stay updated with new offers!</p></td>
+                </tr>
+               </table>
+              
+                <input type="submit" value="CREATE">
+            </form>
+        </div>
+      </div>
+</body>
+<script>
+    var login_details=JSON.parse(localStorage.getItem("login-details")) || [];
+    document.querySelector("form").addEventListener("submit",function(){
+        event.preventDefault();
+        var Fname=document.getElementById("f_name").value;
+        var Lname=document.getElementById("l_name").value;
+        var email=document.getElementById("mail").value;
+        var password=document.getElementById("password").value;
+        var obj={};
+        obj["f_name"]=Fname;
+        obj["l_name"]=Lname;
+        obj["email"]=email;
+        obj["password"]=password;
+        login_details.push(obj);
+        localStorage.setItem("login-details",JSON.stringify(login_details));
+    });
+</script>
+</html>

@@ -4,21 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="shortcut icon" href="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/bluefly_ico_new_32x32.png?v=1613180452" type="image/x-icon">
+    <title>Account-Bluefly</title>
+
     <style>
-        h1{
+        #parent>h1{
             text-align: center;
             font-size: 40px;
-            font-family: Time;
+            font-family: serif;
+            font-weight: 400;
+           letter-spacing: 2px;
+
         }
         #parent{
             
             width:40%;
             height: auto;
             padding: 1%;
-            border: 1px solid;
+           
             margin: auto;
-            margin-top: 7%;
+          
         }
         #parent>div{
             width: 70%;
@@ -49,29 +54,98 @@
         #parent>div> form>input:nth-child(5){
             width: 93%;
             margin-top: 8%;
+            letter-spacing: 4px;
+            background-color: #000;
+            color: white;
+        }
+        #parent>div> form>input:nth-child(4), #parent>div> form>input:nth-child(2){
+           font-size:medium;
+           border-width: thin;
+           border-color: gainsboro;
+          
+          
+        }
+        #parent>div> form>input:nth-child(4):focus, #parent>div> form>input:nth-child(2):focus{
+            border: 1px solid;
+            border-width: 0.5;
         }
         #parent>div> form>button:nth-child(6){
             display: block;
             height: 40px;
             margin: auto;
-           
+           background-color: transparent;
+           border: transparent;
+
         }
+       #alrt{
+        margin: auto;
+       
+       
+       }
     </style>
 </head>
 <body>
+
   <div id="parent">
     <h1>LOGIN</h1>
     <div>
-        
-        <form >
+        <div id="alrt"></div>
+        <form id="login">
             <label >EMAIL</label>
-            <input type="email">
+            <input type="email" id="mail">
             <label>PASSWORD <span id="forget">Forgot password?</span></label>
-            <input type="password">
-            <input type="submit" value="submit">
+            <input type="password" id="password">
+            <input type="submit" value="SIGN IN">
             <button>Create account</button>
         </form>
     </div>
   </div>
 </body>
+<script>
+    var bool=true;
+    var login_details=JSON.parse(localStorage.getItem("login-details")) || [];
+    document.querySelector("#login").addEventListener("submit",function(){
+        event.preventDefault();
+        var email=document.getElementById("mail").value;
+        var password=document.getElementById("password").value;
+        var check=false;
+        login_details.forEach(function(ele){
+            if(ele.email==email && password==ele.password){
+        bool=true;
+        if(document.querySelector("#alrt>p")!=null){
+            document.querySelector("#alrt>p").remove();
+        document.getElementById("alrt").style.height="";
+            document.getElementById("alrt").style.border="";
+            document.getElementById("alrt").style.width="";
+        }
+            check=true;
+            window.location.href="details.html";
+            return;
+        }
+        });
+        if(!check){
+           if(bool){
+            var div=document.createElement("div");
+            var p=document.createElement("p");
+            p.innerText="● Incorrect email or password.";
+            p.setAttribute("id","incorrect_password");
+            div.append(p);
+            document.querySelector("#alrt").append(p);
+            document.getElementById("alrt").style.width="90%"
+            
+            document.getElementById("alrt").style.height="37px"
+            document.getElementById("alrt").style.border="1px solid #D02E2E"
+            document.querySelector("#alrt>p").style.color="#D02E2E";
+            document.querySelector("#alrt>p").style.fontSize="medium";
+            document.querySelector("#alrt>p").style.fontFamily="Times New Roman"
+            document.querySelector("#alrt>p").style.fontWeigth="300";
+            document.querySelector("#alrt>p").style.margin="5px auto auto auto"
+            bool=false;
+           }
+        }
+        document.querySelector("div>form>button").addEventListener("click",function(){
+            window.location.href="create_Account.html";
+        });
+    });
+</script>
 </html>
