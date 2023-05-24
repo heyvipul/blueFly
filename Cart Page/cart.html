@@ -5,8 +5,99 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="cart.css">
 </head>
 <body>
+
+    <section>
+        <h2 style="padding:20px">Shopping Cart</h2>
+    </section>
+
+    <section id="cart-container" class="container my-5">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td>Image</td>
+                    <td>Product</td>
+                    <td>Price</td>
+                    <td>Quantity</td>
+                    <td>Total</td>
+                    <td>Remove</td>
+                </tr>
+            </thead>
+
+            <tbody>
+                <!-- import your tbody here -->
+                <tr>
+                    <td>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTdhlCVIdeiVmAZKvIWYgOx7rJAFoR4oi7jQ&usqp=CAU" alt="handbag">
+                    </td>
+                    <td><h5>Handbag</h5></td>
+                    <td><h5>$60</h5></td>
+                    <td><input class="w-25 pl-1" value="1" type="number"></td>
+                    <td><h5>$60</h5></td>
+                    <td><h5><span>Delete </span></h5></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNvIKpXwg1isx8X3xGI5t9FZDwKZ_xFusypQ&usqp=CAU" alt="handbag">
+                    </td>
+                    <td><h5>HandBag</h5></td>
+                    <td><h5>$60</h5></td>
+                    <td><input class="w-25 pl-1" value="1" type="number"></td>
+                    <td><h5>$80</h5></td>
+                    <td><h5><span>Delete</span></h5></td>
+                </tr>
+
+            </tbody>
+        </table>
+    </section>
+
+    <section id="cart-bottom" class="container">
+        <div class="row">
+            <div class="coupon col-lg-6 col-md-6 col-12 mb-4">
+                <div>
+                    <h5>COUPON</h5>
+                    <p>Enter your coupon if you have one.</p>
+                    <input type="text" placeholder="Coupon Code">
+                    <button >APPLY COUPON</button>
+                </div>
+            </div>
+            <div class="total col-lg-6 col-md-6 col-12">
+                <div>
+                    <h5>CART TOTAL</h5>
+                    <div class="d-flex justify-content-between">
+                        <h6>Subtotal</h6>
+                        <p>$120.00</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <h6>Shipping</h6>
+                        <p>$40.00</p>
+                     </div>
+                    <hr class=" second-hr">
+                    <div class="d-flex justify-content-between">
+                        <h6>Total</h6>
+                        <p>$160.00</p>
+                     </div>
+
+                     <button class="ml-auto">PROCEED TO CHECKOUT</button>
+
+                </div>
+            </div>
+        </div>
+         
+    </section>
+
+
     
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 </html>
