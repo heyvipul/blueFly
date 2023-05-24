@@ -3,10 +3,314 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product</title>
+    <style>
+        body{
+        text-align: center;
+        }
+        #parent{
+
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+        
+            gap: 25px;
+
+
+
+        }
+        #parent >div>div{
+            display: flex;
+            justify-content: space-between;
+            width : 75%;
+            margin: auto;
+        }
+        img{
+            width: 50%;
+        }
+        p:first-child{
+            text-decoration: line-through;
+        }
+        p:last-child{
+            color: rgb(237, 47, 47);
+        }
+    .cartbtn{
+        background-color: black;
+        color: aliceblue;
+        border-radius: 15px;
+        border: 0px;
+        width: 80%;
+        padding: 10px;
+        cursor: pointer;
+    }
+    a{
+        border-bottom-left-radius: 40px;
+        border-top-left-radius: 40pxpx;
+        margin: auto;
+        padding: 2px 4px 2px 8px;
+    
+        background-color: red;
+        color: aliceblue;
+    }
+    </style>
 </head>
 <body>
- <h1>prduct</h1>   
+<h1>Mens Product</h1>
+    <div id="parent"></div>
 </body>
 </html>
+
+<script>
+    var mensdata = [
+    {
+        id:1,
+        image_url:"https://m.media-amazon.com/images/I/71QVFgKdZyL._AC_SR768,1024__FMwebp_.jpg"
+       , name: "MEN'S REEBOK RUNNING ROADMAP SHOES",
+      
+      strikedoffprice: "2599",
+      price: "1170",
+      save: "save 30%",
+      extrasave : "Extra 15% OFF"
+    },
+    {
+        id:2,
+        image_url:"https://m.media-amazon.com/images/I/71xepGkgBsL._AC_SR768,1024__FMwebp_.jpg"
+        ,name: "MEN'S REEBOK RUNNING ROADMAP SHOES",
+      
+      strikedoffprice: "2599",
+      price: "1170",
+      save: "save 30%",
+      extrasave : "Extra 15% OFF"
+    },
+    {
+        id:3,
+        image_url:"https://m.media-amazon.com/images/I/619U1tpEkZL._AC_SR768,1024__FMwebp_.jpg"
+     ,   name: "MEN'S REEBOK RUNNING ROADMAP SHOES",
+    
+      strikedoffprice: "2599",
+      price: "1170",
+      save: "save 30%",
+      extrasave : "Extra 15% OFF"
+    },
+    {
+        id:4,
+        image_url:"https://m.media-amazon.com/images/I/71lWI5+y9qL._AC_SR768,1024__FMwebp_.jpg"
+     ,   name: "MEN'S Bata RUNNING ROADMAP SHOES",
+      
+      strikedoffprice: "2599",
+      price: "1170",
+      save: "save 30%",
+      extrasave : "Extra 15% OFF"
+    },
+    {
+        id:5,
+        image_url:"https://m.media-amazon.com/images/I/71QRe1-AqdL._AC_SR768,1024__FMwebp_.jpg"
+     ,   name: "MEN'S Adidas T-shirts",
+      
+      strikedoffprice: "2599",
+      price: "1170",
+      save: "save 30%",
+      extrasave : "Extra 15% OFF"
+    },
+
+    {
+        id:6,
+        image_url:"https://m.media-amazon.com/images/I/81-EXoILwXL._AC_SR768,1024__FMwebp_.jpg"
+     ,   name: "MEN'S new T-shirts",
+      
+      strikedoffprice: "25",
+      price: "11",
+      save: "save 30%",
+      extrasave : "Extra 15% OFF"
+    },
+
+    {
+        id:7,
+        image_url:"https://m.media-amazon.com/images/I/71dZJ5L9gbL._AC_SR768,1024__FMwebp_.jpg"
+     ,   name: "MEN'S Freedom T-shirts",
+    
+      strikedoffprice: "25",
+      price: "11",
+      save: "save 30%",
+      extrasave : "Extra 15% OFF"
+    },
+
+    {
+        id:8,
+        image_url:"https://m.media-amazon.com/images/I/81G75Un+F4L._AC_SR768,1024__FMwebp_.jpg"
+     ,   name: "MEN'S T-shirts",
+    
+      strikedoffprice: "99",
+      price: "91",
+      save: "save 30%",
+      extrasave : "Extra 15% OFF"
+    },
+
+
+    {
+        id:9,
+        image_url:"https://m.media-amazon.com/images/I/71i3dx+LRsL._AC_SR768,1024__FMwebp_.jpg"
+     ,   name: "MEN'S Adidas T-shirts",
+
+      strikedoffprice: "29",
+      price: "11",
+      save: "save 30%",
+      extrasave : "Extra 15% OFF"
+    },
+
+
+    {
+        id:10,
+        image_url:"https://m.media-amazon.com/images/I/61mkGWOz46L._AC_SR768,1024__FMwebp_.jpg"
+     ,   name: "MEN'S Adidas T-shirts",
+      
+      strikedoffprice: "49",
+      price: "21",
+      save: "save 30%",
+      extrasave : "Extra 15% OFF "
+    },
+
+
+    {
+        id:11,
+        image_url:"https://m.media-amazon.com/images/I/71-BSHzUDAL._AC_SR768,1024__FMwebp_.jpg"
+     ,   name: "MEN'S shirts",
+    
+      strikedoffprice: "2599",
+      price: "11",
+      save: "save 30%",
+      extrasave : "Extra 15% OFF "
+    },
+
+    {
+        id:12,
+        image_url:"https://m.media-amazon.com/images/I/51jo4hKgO4L._AC_SR768,1024__FMwebp_.jpg"
+     ,   name: "MEN'S Adidas shirts",
+      
+      strikedoffprice: "2599",
+      price: "1100",
+      save: "save 30%",
+      extrasave : "Extra 15% OFF"
+    },
+
+{
+    id: 13,
+        image_url:"https://m.media-amazon.com/images/I/61EMZSsex1L._AC_SR768,1024__FMwebp_.jpg"
+     ,   name: "MEN'S  shirts",
+    
+      strikedoffprice: "29",
+      price: "11",
+      save: "save 30%",
+      extrasave : "Extra 15% OFF"
+    },
+    {
+    id: 14,
+        image_url:"https://m.media-amazon.com/images/I/61MK+sV-90L._AC_SR768,1024__FMwebp_.jpg"
+     ,   name: "MEN'S Adidas shirts",
+      
+      strikedoffprice: "59",
+      price: "34",
+      save: "save 30%",
+      extrasave : "Extra 15% OFF"
+    },
+    {
+    id: 16,
+        image_url:"https://m.media-amazon.com/images/I/81DNN9LW9cL._AC_SR768,1024__FMwebp_.jpg"
+     ,   name: "MEN'S pants",
+      
+      strikedoffprice: "2599",
+      price: "11",
+      save: "save 30%",
+      extrasave : "Extra 15% OFF"
+    },
+    {
+    id: 17,
+        image_url:"https://m.media-amazon.com/images/I/61EMZSsex1L._AC_SR768,1024__FMwebp_.jpg"
+     ,   name: "MEN'S Adidas shirts",
+    
+      strikedoffprice: "2599",
+      price: "1187",
+      save: "save 30%",
+      extrasave : "Extra 15% OFF"
+    },
+
+    {
+    id: 18,
+        image_url:"https://m.media-amazon.com/images/I/81E9FJcagwL._AC_SR768,1024__FMwebp_.jpg"
+     ,   name: "MEN'S pants",
+      
+      strikedoffprice: "2599",
+      price: "1122",
+      save: "save 30%",
+      extrasave : "Extra 15% OFF"
+    },
+    {
+    id: 19,
+        image_url:"https://m.media-amazon.com/images/I/612M6UN9JpL._AC_SR768,1024__FMwebp_.jpg"
+     ,   name: "MEN'S pants",
+    
+      strikedoffprice: "29",
+      price: "11",
+      save: "save 30%",
+      extrasave : "Extra 15% OFF"
+    },
+    {
+    id: 20,
+        image_url:"https://m.media-amazon.com/images/I/61-SP26EPYL._AC_SR768,1024__FMwebp_.jpg"
+     ,   name: "MEN'S  trousers",
+      
+      strikedoffprice: "29",
+      price: "11",
+      save: "save 30%",
+      extrasave : "Extra 15% OFF"
+    },
+    
+
+
+];   
+   
+displayproduct();
+        
+  function displayproduct(){
+    mensdata.map(function(elem){
+        var div = document.createElement("div");
+
+    var image = document.createElement("img");
+    image.setAttribute("src" ,elem.image_url);
+    image.setAttribute("alt" ,elem.name);
+   var extrasave = document.createElement("a");
+   extrasave.textContent = elem.extrasave;
+
+    var name = document.createElement("h4");
+    name.textContent = elem.name;
+var pricebox = document.createElement("div");
+
+    var strikedoffprice = document.createElement("p");
+    strikedoffprice.textContent = "$" + elem.strikedoffprice;
+
+    var price = document.createElement("p");
+    price.textContent = "$"+elem.price;
+    
+    var save = document.createElement("p");
+    save.textContent = elem.save;
+    pricebox.append(strikedoffprice,price,save);
+
+    var cart = document.createElement("button");
+    cart.textContent = "Add To Cart";
+cart.setAttribute("class","cartbtn");
+
+cart.addEventListener("click", function(){
+    addtocart(elem);
+})
+
+    div.append(image,extrasave, name,pricebox,cart);
+    document.getElementById("parent").append(div);
+    })
+  }
+var cartarr = JSON.parse(localStorage.getItem("cartlist")) || [];
+  function addtocart(mensdata){
+    console.log(mensdata);
+    cartarr.push(mensdata);
+    localStorage.setItem("cartlist",JSON.stringify(cartarr));
+  }
+</script>
