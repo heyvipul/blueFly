@@ -10,9 +10,32 @@
 
 
     <style>
-      body{
-      text-align: center;
+ #whole{
+    display: flex;
+  }
+  #pic{
+    width: 100%;
+    margin-top: 50px;
+  }
+
+      #container>h1{
+        text-align: center;
+        color: rgb(88, 5, 5);
       }
+      #type{
+        border:0px;
+         margin-top: 100px;
+         margin-right: -40px;
+        padding: 45px 48px 45px 48px;
+        background-color: whitesmoke;
+      }
+      #types{
+        border:0px;
+        margin-right: -40px;
+        padding: 45px 50px 45px 50px;
+        background-color: whitesmoke;
+      }
+      
       #parent{
 
           display: grid;
@@ -35,7 +58,7 @@
     #parent>div>div>  p:first-child{
           text-decoration: line-through;
       }
-      p:last-child{
+      #parent>div>div>p:last-child{
           color: rgb(237, 47, 47);
       }
   .cartbtn{
@@ -115,10 +138,62 @@ footer{
 
 </head>
 <body>
-<h1>Mens Product</h1>
-    <div id="parent"></div>
+    <div id="whole">
+    <div id="sec">
+    <select id="type">
+        <option value="">Price Filter</option>
+        <option value="low">LOW TO HIGH</option>
+        <option value="high">HIGH TO LOW</option>
+    
+    </select>
+    <select id="types">
+        <option value="">Brand Section</option>
+        <option value="bata">bata</option>
+        <option value="louis">louis phillip</option>
+        <option value="peter">peter england</option>
+        <option value="gucci">gucci</option>
+        <option value="levis">levis</option>
+        <option value="mochi">mochi</option>
+        <option value="biba">biba</option>
+        <option value="killer">killer</option>
+    </select>
+    <select id="types">
+        <option value="">COLOR ITEM</option>
+        <option value="black ">black</option>
+        <option value="red">red</option>
+        <option value="yellow">yellow</option>
+        <option value="blue">blue</option>
+        <option value="green">green</option>
+    </select>
+    <select id="types">
+        <option value="">PRICE  OFF%</option>
+        <option value="OFF">60%OFF</option>
+        <option value="OF">30%OFF</option>
+    </select>
+    <select id="types">
+        <option value="">CONDITION   . </option>
+        <option value="new">NEW</option>
+        <option value="PRE">PREOWNED</option>
+    </select>
 
 
+    </div>
+<div id="container">
+
+  <img  id="pic" src="https://cdn.shopify.com/s/files/1/0254/8878/5498/files/MEMORIAL_DAY_PROMO_TOP_BANNER_1.jpg?v=1685038900" alt="subpic">
+
+  <h1>Mens Product</h1>
+  
+    <div id="parent">
+    
+
+    </div>
+<img id="pic" src="https://cdn.shopify.com/s/files/1/0254/8878/5498/files/SHOP_PAY_BANNER_Top_1.jpg?v=1684348361" alt="offerpic">
+</div>
+
+    </div>
+
+<!-- footerpart..... -->
     <footer>
       <div class="footer_container">
 

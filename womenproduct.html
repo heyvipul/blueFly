@@ -12,9 +12,15 @@
 
 
     <style>
-        body{
+        body>h1{
         text-align: center;
+        color: rgb(75, 5, 5);
         }
+        #type{
+        border: 0px;
+        padding: 5px 10px 5px 10px;
+        background-color: plum;
+      }
         #parent{
 
             display: grid;
@@ -34,10 +40,10 @@
         img{
             width: 50%;
         }
-      #parent>div>div>  p:first-child{
+      #parent>div>div>p:first-child{
             text-decoration: line-through;
         }
-        p:last-child{
+        #parent>div>div>p:last-child{
             color: rgb(237, 47, 47);
         }
     .cartbtn{
@@ -48,6 +54,9 @@
         width: 80%;
         padding: 10px;
         cursor: pointer;
+    }
+    .cartbtn:hover{
+        background-color: #454545;
     }
   #parent>div>a{
         border-bottom-left-radius: 40px;
@@ -118,6 +127,12 @@ footer{
 <body>
 <h1>Womens Product</h1>
 
+<select id="type">
+    <option value="">PRICE FILTER</option>
+    <option value="low">LOW TO HIGH</option>
+    <option value="high">HIGH TO LOW</option>
+
+  </select>
     <div id="parent"></div>
 
     <footer>
