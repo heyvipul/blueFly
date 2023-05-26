@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      #parent{
+        width: 95%;
+        display: flex;
+        margin: auto;
+        height: auto;
+      }
+      #ch0{
+        width: 10%;
+        border: 1px solid;
+       
+      }
+      #ch0>div{
+        margin: auto;
+        width: 90%;
+        margin-top: 10%;
+        margin-bottom: 10%;
+      }
+      #ch0 img{
+        width: 100%;
+      }
+      #ch1{
+        width: 40%;
+        border: 1px solid;
+       
+      }
+      #ch2{
+        width: 45%;
+        border: 1px solid;
+      }
+      #ch1>img{
+       width: 80%;
+       height: 100%;
+      
+       display: block;
+       margin: 10% auto 10% auto;
+        
+        cursor: zoom-in;
+        height: 70%;
+      }
+      #ch0>div{
+        cursor: pointer;
+        
+      }
+      #ch0>div:hover{
+     border: 2px solid #000;
+        }
+      #ch2>div:nth-child(3){
+        display: flex;
+        width: 70%;
+      }
+      #ch2>div:nth-child(3)>div{
+       width: 100%;
+      }
+    </style>
+</head>
+
+<body>
+    <div id="parent">
+      <div id="ch0">
+        <div><img src="" alt=""></div>
+        <div><img src="" alt=""></div>
+        <div><img src="" alt=""></div>
+      </div>
+        <div id="ch1">
+           <img src="" alt="">
+        </div>
+        <div id="ch2">
+            <h3></h3>
+                <h2></h2>
+                <div>
+                  <div><p></p></div>
+                  <div><p></p></div>
+                  <div><p></p></div>
+                </div> 
+                <hr>
+                <p></p>
+                <p></p> 
+                <div>
+                  <div></div>
+                  <div></div>
+                </div>
+                <div></div>
+                <p></p>
+                <button></button>
+                <p></p>
+                <button></button>
+                <p></p>
+                <p></p>
+                <a href=""></a>
+                <button></button>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+        </div>
+    </div>
+</body>
+<script>
+  var arr=[
+  {  brand_name:"NIVIA",
+    productType:"mansCream",
+     name:"Nivea Men Creme, Dark Spot Reduction, Non Greasy Moisturizer, Cream With Uv Protect, 150 ml",
+    image_url:"https://m.media-amazon.com/images/I/51NYSJRXJ6L._AC_UL400_.jpg",
+    image_url1:"https://m.media-amazon.com/images/I/51J0i8pWNmL._SY450_.jpg",
+    image_url2:"https://m.media-amazon.com/images/I/61WcUrkdpYL._SY450_.jpg",
+    strikedoffprice: "399",
+    price: "259",
+    save: "save 30%",
+      extrasave : "Extra 15% OFF"
+},
+{  brand_name:"MAN MATTERS",
+   productType:"mansCream",
+     name:"Man Matters Biotin Hair Gummies | 60 Days Pack | With Biotin, |100% Vegetarian | 60 Gummies",
+    image_url:"https://m.media-amazon.com/images/I/81bt4NnbTOL._AC_UL400_.jpg",
+    image_url1:"https://m.media-amazon.com/images/I/81jL0EGMmfL._SX569_.jpg",
+    image_url2:"https://m.media-amazon.com/images/I/812po+vEY3L._SX569_.jpg",
+    strikedoffprice: "849",
+    price: "799",
+    save: "save 30%",
+      extrasave : "Extra 15% OFF"
+},
+{  brand_name:"The Man Company",
+productType:"mansCream",
+     name:"The Man Company Skin Brightening Cream with Multani Mitti, Coco Butter | Removes Blackhead - 30 gm",
+    image_url:"https://m.media-amazon.com/images/I/41NS+PHtALL._AC_UL400_.jpg",
+    image_url1:"https://m.media-amazon.com/images/I/51RnKYG8KgL._SX425_.jpg",
+    image_url2:"https://m.media-amazon.com/images/I/616o0mk5IcL._SX425_.jpg",
+    strikedoffprice: "299",
+    price: "189",
+    save: "save 30%",
+      extrasave : "Extra 15% OFF"
+},
+{  brand_name:"GARNIER",
+productType:"mansCream",
+     name:"Garnier Men, Face Wash, Brightening & Anti-Pollution, TurboBright Double Action, 150 g",
+    image_url:"https://m.media-amazon.com/images/I/51YOFiC3zvL._AC_UL400_.jpg",
+    image_url1:"https://m.media-amazon.com/images/I/61pOAOfbDML._SX425_.jpg",
+    image_url2:"https://m.media-amazon.com/images/I/61qEEmhOTLL._SX425_.jpg",
+    strikedoffprice: "325",
+    price: "262",
+    save: "save 30%",
+      extrasave : "Extra 15% OFF"
+},
+{  brand_name:"URBAN FOREST",
+productType:"wallet",
+     name:"URBAN FOREST Oliver Redwood Leather Wallet for Men",
+    image_url:"https://m.media-amazon.com/images/I/71t7CgBwJ4L._AC_UL400_.jpg",
+    image_url1:"https://m.media-amazon.com/images/I/81wc7fARCsL._SY741_.jpg",
+    image_url2:"https://m.media-amazon.com/images/I/81T8LdEzLQL._SX569_.jpg",
+    strikedoffprice: "2000",
+    price: "499",
+    save: "save 30%",
+      extrasave : "Extra 15% OFF"
+},
+{  brand_name:"RIGOHILL",
+productType:"wallet",
+     name:"RIGOHILL Doger Olive Green Mens Leather Wallet | Leather Wallet for Men | RFID Mens Wallet",
+    image_url:"https://m.media-amazon.com/images/I/71SYvtX2YmL._AC_UL400_.jpg",
+    image_url1:"https://m.media-amazon.com/images/I/71lhhYRTFpL._SX569_.jpg",
+    image_url2:"https://m.media-amazon.com/images/I/81FlhNtY3NL._SX569_.jpg",
+    strikedoffprice: "2499",
+    price: "499",
+    save: "save 30%",
+      extrasave : "Extra 15% OFF"
+},
+{  brand_name:"NAPA HIDE",
+productType:"wallet",
+     name:"NAPA HIDE Leather Wallet for Men I Handcrafted I Multiple Credit | I 2 Secret Compartments",
+    image_url:"https://m.media-amazon.com/images/I/81aZAmkJQWL._AC_UL400_.jpg",
+    image_url1:"https://m.media-amazon.com/images/I/91GgbctZ1EL._UX679_.jpg",
+    image_url2:"https://m.media-amazon.com/images/I/81gZOqQXT9L._UX679_.jpg",
+    strikedoffprice: "1499",
+    price: "299",
+    save: "save 30%",
+      extrasave : "Extra 15% OFF"
+},
+{  brand_name:"WildHorn",
+productType:"wallet",
+     name:"WildHorn Trifold Leather Wallet for Men I Handcrafted I Ultra Strong Stitching | I Currency Compartment",
+    image_url:"https://m.media-amazon.com/images/I/71SJJMXG19L._AC_UL400_.jpg",
+    image_url1:"https://m.media-amazon.com/images/I/813-bVZMpIL._SX569_.jpg",
+    image_url2:"https://m.media-amazon.com/images/I/81LLM2H7xsL._SX569_.jpg",
+    strikedoffprice: "1499",
+    price: "299",
+    save: "save 30%",
+      extrasave : "Extra 15% OFF"
+},
+{  brand_name:"Fastrac",
+productType:"mansSunglasses",
+     name:"Fastrack Men Square Black Sunglasses-Pack of 1",
+    image_url:"https://m.media-amazon.com/images/I/61+THk53YIL._AC_UL400_.jpg",
+    image_url1:"https://m.media-amazon.com/images/I/619hy5yVQWL._UX522_.jpg",
+    image_url2:"https://m.media-amazon.com/images/I/61vPBNLue7L._UX679_.jpg",
+    strikedoffprice: "799",
+    price: "699",
+    save: "save 30%",
+      extrasave : "Extra 15% OFF"
+},
+{  brand_name:"VELOCITY STORE",
+productType:"mansSunglasses",
+     name:"Velocity Polarized Aviator Green INJ POL Sunglasses for Men",
+    image_url:"https://m.media-amazon.com/images/I/51TZG3rY+DL._UX679_.jpg",
+    image_url1:"https://m.media-amazon.com/images/I/51J7FIerYCL._UX679_.jpg",
+    image_url2:"https://m.media-amazon.com/images/I/518KAsYiirL._UX679_.jpg",
+    strikedoffprice: "1499",
+    price: "1299",
+    save: "save 30%",
+      extrasave : "Extra 15% OFF"
+},
+{  brand_name:"Fastrack",
+productType:"mansSunglasses",
+     name:"Fastrack Men Pilot Green Sunglasses-Pack of 1",
+    image_url:"https://m.media-amazon.com/images/I/61XFwxOh4GL._UX679_.jpg",
+    image_url1:"https://m.media-amazon.com/images/I/61X3yRvhrLL._UX679_.jpg",
+    image_url2:"https://m.media-amazon.com/images/I/71RLeDOfVEL._UX522_.jpg",
+    strikedoffprice: "2099",
+    price: "1965",
+    save: "save 30%",
+      extrasave : "Extra 15% OFF"
+},
+{  brand_name:"ELEGANTE",
+productType:"mansSunglasses",
+     name:"ELEGANTE Mens Square Sunglasses, UV Protected Stylish Sun Glasses for Men",
+    image_url:"https://m.media-amazon.com/images/I/51bzps707YL._UX679_.jpg",
+    image_url1:"https://m.media-amazon.com/images/I/71lCmJtpyHL._UX679_.jpg",
+    image_url2:"https://m.media-amazon.com/images/I/61vE4kusVTL._UX679_.jpg",
+    strikedoffprice: "2499",
+    price: "596",
+    save: "save 30%",
+      extrasave : "Extra 15% OFF"
+},
+{  brand_name:"FREECULTR",
+productType:"mansclothing",
+     name:"FREECULTR Unisex Printed Bamboo Bandana Face Mask for Dust and Sun Protection",
+    image_url:"https://m.media-amazon.com/images/I/718-a6R5nWL._UX425_.jpg",
+    image_url1:"https://m.media-amazon.com/images/I/71CS9pbsQPL._UX425_.jpg",
+    image_url2:"https://m.media-amazon.com/images/I/71xrPzGy+0L._UX425_.jpg",
+    strikedoffprice: "999",
+    price: "499",
+    save: "save 30%",
+      extrasave : "Extra 15% OFF"
+},
+{  brand_name:"Lymio",
+productType:"mansclothing",
+     name:"Lymio Casual Shirt for Men|| Shirt for Men|| Men Stylish Shirt || Men Printed Shirt (Patta)",
+    image_url:"https://m.media-amazon.com/images/I/71On2XSPuRL._UY445_.jpg",
+    image_url1:"https://m.media-amazon.com/images/I/81300Ou0hAL._UY445_.jpg",
+    image_url2:"https://m.media-amazon.com/images/I/7143xg-yZVL._UY445_.jpg",
+    strikedoffprice: "4999",
+    price: "379",
+    save: "save 30%",
+      extrasave : "Extra 15% OFF"
+},
+{  brand_name:"Amazon",
+productType:"mansclothing",
+     name:"Amazon Brand - Symbol Men Shirt",
+    image_url:"https://m.media-amazon.com/images/I/81gEEU2IeHL._UX522_.jpg",
+    image_url1:"https://m.media-amazon.com/images/I/81jMs8fB4fL._UX522_.jpg",
+    image_url2:"https://m.media-amazon.com/images/I/91yl4ysaxoL._UX522_.jpg",
+    strikedoffprice: "2099",
+    price: "557",
+    save: "save 30%",
+      extrasave : "Extra 15% OFF"
+},
+{  brand_name:"Amazon",
+productType:"mansclothing",
+     name:"Amazon Brand - Symbol Men Formal Shirt",
+    image_url:"https://m.media-amazon.com/images/I/713xbqIKW4L._UX522_.jpg",
+    image_url1:"https://m.media-amazon.com/images/I/81tuLcV5zTL._UX522_.jpg",
+    image_url2:"https://m.media-amazon.com/images/I/61PNLI3SYrL._UX522_.jpg",
+    strikedoffprice: "1699",
+    price: "836",
+    save: "save 30%",
+      extrasave : "Extra 15% OFF"
+}
+  ];
+  var product=JSON.parse(localStorage.getItem("product-pge-item"));
+  document.querySelector("#ch1>img").setAttribute("src",product.imgs);
+  document.querySelector("#ch0>div>img").setAttribute("src",product.imgs);
+  document.querySelector("#ch0>div>img").addEventListener("click",function(){
+    document.querySelector("#ch1>img").remove();
+    var img=document.createElement("img");
+    img.setAttribute("src",product.imgs);
+    document.querySelector("#ch1").append(img);
+  });
+  document.querySelector("#ch0>div:nth-child(2)>img").setAttribute("src",product.img2);
+  document.querySelector("#ch0>div:nth-child(2)>img").addEventListener("click",function(){
+    document.querySelector("#ch1>img").remove();
+    var img=document.createElement("img");
+    img.setAttribute("src",product.img2);
+    document.querySelector("#ch1").append(img);
+  });
+  document.querySelector("#ch0>div:nth-child(3)>img").setAttribute("src",product.img3);
+  document.querySelector("#ch0>div:nth-child(3)>img").addEventListener("click",function(){
+    document.querySelector("#ch1>img").remove();
+    var img=document.createElement("img");
+    img.setAttribute("src",product.img3);
+    document.querySelector("#ch1").append(img);
+  });
+  document.querySelector("#ch2>h3").innerText=product.brand;
+  document.querySelector("#ch2>h2").innerText=product.discription;
+  document.querySelector("#ch2>div:nth-child(3)>div:nth-child(1)>p").innerText=product.rprice;
+  //console.log(product.price);
+  document.querySelector("#ch2>div:nth-child(3)>div:nth-child(2)>p").innerText=product.price;
+  document.querySelector("#ch2>div:nth-child(3)>div:nth-child(3)>p").innerText=product.saving;
+</script>
+</html>
