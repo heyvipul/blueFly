@@ -15,7 +15,7 @@
             grid-template-columns: repeat(4,1fr);
         
             gap: 25px;
-
+         
 
 
         }
@@ -24,6 +24,9 @@
             justify-content: space-between;
             width : 75%;
             margin: auto;
+        }
+        #parent>div{
+          border: 1px solid;
         }
         img{
             width: 50%;
@@ -96,9 +99,9 @@
 {  brand_name:"The Man Company",
 productType:"mansCream",
      name:"The Man Company Skin Brightening Cream with Multani Mitti, Coco Butter | Removes Blackhead - 30 gm",
-    image_url:"https://m.media-amazon.com/images/I/41NS+PHtALL._AC_UL400_.jpg",
-    image_url1:"https://m.media-amazon.com/images/I/51RnKYG8KgL._SX425_.jpg",
-    image_url2:"https://m.media-amazon.com/images/I/616o0mk5IcL._SX425_.jpg",
+    image_url:"https://m.media-amazon.com/images/I/51QZU5qQRVL._SY450_.jpg",
+    image_url1:"https://m.media-amazon.com/images/I/71YpI+Nin1L._SY450_.jpg",
+    image_url2:"https://m.media-amazon.com/images/I/71LBwLbxtxL._SY450_.jpg",
     strikedoffprice: "299",
     price: "189",
     save: "save 30%",
@@ -275,16 +278,10 @@ var pricebox = document.createElement("div");
     save.textContent = elem.save;
     pricebox.append(strikedoffprice,price,save);
 
-    var cart = document.createElement("button");
-    cart.textContent = "Add To Cart";
-cart.setAttribute("class","cartbtn");
+   
 
-cart.addEventListener("click", function(){
-    addtocart(elem);
-})
-
-    div.append(image,extrasave, name,pricebox,cart);
-    div.addEventListener("click",function(){  //Abhishek Added part is starting
+    
+    image.addEventListener("click",function(){  //Abhishek Added part is starting
       var imgs=event.target.parentNode.children[0].getAttribute("src");
      var discount= event.target.parentNode.children[1].innerText;
       var discription=event.target.parentNode.children[2].innerText;
@@ -292,11 +289,11 @@ cart.addEventListener("click", function(){
       console.log(rprice);
       var price=event.target.parentNode.children[3].children[1].innerText;
      var saving= event.target.parentNode.children[3].children[2].innerText;
-     var brand=event.target.parentNode.children[5].children[0].innerText;
+     var brand=event.target.parentNode.children[4].children[0].innerText;
     // console.log(brand);
-     var type=event.target.parentNode.children[5].children[1].innerText;
-     var img2=event.target.parentNode.children[5].children[2].getAttribute("src");
-     var img3=event.target.parentNode.children[5].children[3].getAttribute("src");
+     var type=event.target.parentNode.children[4].children[1].innerText;
+     var img2=event.target.parentNode.children[4].children[2].getAttribute("src");
+     var img3=event.target.parentNode.children[4].children[3].getAttribute("src");
     // console.log();
       var obj={};
       obj["imgs"]=imgs;
@@ -316,6 +313,39 @@ cart.addEventListener("click", function(){
 
 
     });
+    name.addEventListener("click",function(){  //Abhishek Added part is starting
+      var imgs=event.target.parentNode.children[0].getAttribute("src");
+     var discount= event.target.parentNode.children[1].innerText;
+      var discription=event.target.parentNode.children[2].innerText;
+      var rprice=event.target.parentNode.children[3].children[0].innerText;
+      console.log(rprice);
+      var price=event.target.parentNode.children[3].children[1].innerText;
+     var saving= event.target.parentNode.children[3].children[2].innerText;
+     var brand=event.target.parentNode.children[4].children[0].innerText;
+    // console.log(brand);
+     var type=event.target.parentNode.children[4].children[1].innerText;
+     var img2=event.target.parentNode.children[4].children[2].getAttribute("src");
+     var img3=event.target.parentNode.children[4].children[3].getAttribute("src");
+    // console.log();
+      var obj={};
+      obj["imgs"]=imgs;
+      obj["discount"]=discount;
+      obj["discription"]=discription;
+      obj["rprice"]=rprice;
+      obj["price"]=price;
+      obj["saving"]=saving;
+      obj["brand"]=brand;
+      obj["type"]=type;
+      obj["img2"]=img2;
+      obj["img3"]=img3;
+      localStorage.setItem("product-pge-item",JSON.stringify(obj));
+       window.location.href="product_page.html";
+
+       //console.log(event.target.parentNode);  
+
+
+    });
+   
     var mydiv=document.createElement("div");
     mydiv.setAttribute("id","mydiv");
     var brand=document.createElement("p");
@@ -331,10 +361,12 @@ cart.addEventListener("click", function(){
    
    
     mydiv.append(brand,type,img2,img3);
+    div.append(image,extrasave, name,pricebox);
     div.append(mydiv);
+    
     document.getElementById("parent").append(div);
     }) ;    
-                                       // till here
+    // till here
   }
 var cartarr = JSON.parse(localStorage.getItem("cartlist")) || [];
   function addtocart(mensdata){
