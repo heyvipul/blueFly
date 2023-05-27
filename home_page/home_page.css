@@ -6,30 +6,31 @@ body>#offerLine{
 body>#offerLine>img{
     width: 100%;
 }
+/* carousel middle */
 #Hero-carousel{
     margin-top: 10px;
 }
-.c-item{
+#Hero-carousel .c-item{
     height: 650px;
 }
-.c-img{
+#Hero-carousel .c-img{
     height: 100%; 
     object-fit: cover;
     filter: brightness(0.8);
     
 }
-.carousel-caption{
+#Hero-carousel .carousel-caption{
     top: 0;
     margin-top:260px;
     align-items: center;
 }
-.carousel-h1{
+#Hero-carousel .carousel-h1{
     font: 73px "Tiemann",serif;
 }
-.carousel-p{
+#Hero-carousel .carousel-p{
     font: 20.8px "Futura",sans-serif;
 }
-.c-item button{
+#Hero-carousel .c-item button{
     font: 13px "Futura",sans-serif;
     font-weight: bolder;
     background-color:#FFFFFF;
@@ -47,15 +48,36 @@ body>#offerLine>img{
      font: 26.6px "Tiemann",serif;
 }
 
-
+/* carousel lower */
 #Hero-carousel_2{
     margin-top: 10px;
 }
-.Hero-carousel_2 .c-item{
+#Hero-carousel_2 .c-item{
     height: 450px;
 }
-.Hero-carousel_2 .c-img{
+#Hero-carousel_2 .c-img{
     height: 100%; 
     object-fit: cover;
     filter: brightness(0.8);
+}
+#Hero-carousel_2 .carousel-caption{
+    top: 0;
+    margin-top:70px;
+    align-items: center;
+}
+#Hero-carousel_2 .carousel-h1{
+    font: 73px "Tiemann",serif;
+}
+#Hero-carousel_2 .carousel-p{
+    font: 20.8px "Futura",sans-serif;
+}
+#Hero-carousel_2 .c-item button{
+    font: 13px "Futura",sans-serif;
+    font-weight: bolder;
+    background-color:#FFFFFF;
+    color: #000000;
+    margin: 0 5px 2px 0;
+    padding: 11px 20px;
+    border: none;
+    border-radius: 0;
 }
