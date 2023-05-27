@@ -1,8 +1,7 @@
-
-var MensData = JSON.parse(localStorage.getItem("cartlist")) || []
+var MensData = JSON.parse(localStorage.getItem("cartlist")) || [];
 
 if (MensData.length === 0) {
-    document.getElementById("cart-container").textContent = "THERE ARE NO PRODUCTS! DO SOME SHOPPING !";
+    document.getElementById("cart-container").textContent = "THERE ARE NO PRODUCTS! DO SOME SHOPPING!";
 } else {
     displayCart();
     Subtotal();
@@ -10,8 +9,10 @@ if (MensData.length === 0) {
 }
 
 function displayCart() {
-    // event.preventDefault();
-    MensData.map(function(elem,i) {
+    var tbody = document.querySelector("tbody");
+    tbody.innerHTML = ""; // Clear existing table rows
+
+    MensData.forEach(function (elem, i) {
         var tr = document.createElement("tr");
 
         var image = document.createElement("img");
@@ -28,7 +29,16 @@ function displayCart() {
         td3.textContent = "$ " + elem.price;
 
         var td4 = document.createElement("td");
-        td4.textContent = 1;
+        var input = document.createElement("input");
+        input.className = "w-25 pl-1";
+        input.value = "1";
+        input.type = "number";
+        input.addEventListener("input", function () {
+            updatePrice(i, this.value, td5);
+            Subtotal();
+            Total();
+        });
+        td4.appendChild(input);
 
         var td5 = document.createElement("td");
         td5.textContent = "$ " + elem.price;
@@ -36,60 +46,101 @@ function displayCart() {
         var td6 = document.createElement("td");
         td6.textContent = "DELETE";
         td6.style.backgroundColor = "red";
-        td6.style.color = "white"
+        td6.style.color = "white";
         td6.style.fontFamily = "monospace";
 
-        td6.addEventListener("click",function(){
-            event.target.parentNode.remove();
+        td6.addEventListener("click", function () {
+            tr.remove();
             delRow(i);
-        //    displayCart();
+            Subtotal();
+            Total();
         });
 
         tr.append(td1, td2, td3, td4, td5, td6);
-        document.querySelector("tbody").append(tr);
+        tbody.append(tr);
     });
+
+    var applyCouponBtn = document.querySelector(".apply_coupon");
+    applyCouponBtn.addEventListener("click", applyCoupon);
 }
 
-    function delRow(startIndex){
-        var el = MensData.splice(startIndex,1);
-        console.log(el);
-        console.log(MensData);
-        localStorage.setItem("cartlist",JSON.stringify(MensData));
-   
-    }
-    
+function delRow(startIndex) {
+    MensData.splice(startIndex, 1);
+    localStorage.setItem("cartlist", JSON.stringify(MensData));
+}
 
+function updatePrice(index, quantity, priceElement) {
+    var product = MensData[index];
+    var totalPrice = Number(product.price) * Number(quantity);
+    product.quantity = Number(quantity);
+    priceElement.textContent = "$ " + totalPrice;
+    localStorage.setItem("cartlist", JSON.stringify(MensData));
+}
 
+function applyCoupon() {
+    var couponInput = document.querySelector(".coupon input");
+    var couponCode = couponInput.value.trim();
 
+    if (couponCode === "masai") {
+        var total = calculateTotal();
+        var discountedTotal = total - total * 0.3; // Apply 30% discount
 
-
-    function Subtotal(){
-        var total = MensData.reduce(function(acc, currEl){
-            return Number(acc) + Number(currEl.price);
-        },0);
-
-        var p = document.createElement("h6");
-        p.textContent = "Subtotal";
-
-        var p1 = document.createElement("p");
-        p1.textContent ="$ "+total;
-
-        document.querySelector("#subtotal").append(p,p1);
-
-    }
-
-    function Total(){
-        var total = MensData.reduce(function(acc, currEl){
-            return Number(acc) + Number(currEl.price);
-        },0);
+        var finalTotalContainer = document.querySelector("#Finaltotal");
+        finalTotalContainer.innerHTML = ""; 
 
         var p = document.createElement("h6");
-        p.textContent = "Total";
+        p.textContent = "Total (after discount)";
 
         var p1 = document.createElement("p");
-        var add = Number(total) + Number(40);
-        p1.textContent = "$ " + add;
+        p1.textContent = "$ " + discountedTotal.toFixed(2);
 
-        document.querySelector("#Finaltotal").append(p,p1);
-
+        finalTotalContainer.append(p, p1);
+    } else {
+        Total(); 
     }
+
+    couponInput.value = ""; 
+}
+
+function Subtotal() {
+    var total = MensData.reduce(function (acc, currEl) {
+        var quantity = currEl.quantity || 1; 
+        return acc + currEl.price * quantity;
+    }, 0);
+
+    var subtotalContainer = document.querySelector("#subtotal");
+    subtotalContainer.innerHTML = ""; 
+
+    var p = document.createElement("h6");
+    p.textContent = "Subtotal";
+
+    var p1 = document.createElement("p");
+    p1.textContent = "$ " + total.toFixed(2); 
+
+    subtotalContainer.append(p, p1);
+}
+
+function Total() {
+    var total = calculateTotal();
+
+    var finalTotalContainer = document.querySelector("#Finaltotal");
+    finalTotalContainer.innerHTML = "";
+
+    var p = document.createElement("h6");
+    p.textContent = "Total";
+
+    var p1 = document.createElement("p");
+    p1.textContent = "$ " + total.toFixed(2); 
+
+    finalTotalContainer.append(p, p1);
+}
+
+function calculateTotal() {
+    var total = MensData.reduce(function (acc, currEl) {
+        var quantity = currEl.quantity || 1; 
+        return acc + currEl.price * quantity;
+    }, 0);
+
+    return total;
+}
+

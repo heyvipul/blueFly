@@ -93,6 +93,15 @@ button{
     /* font-family: monospace; */
     
 }
+.checkout:hover ,
+.apply_coupon:hover{
+   background-color: green;
+   color: white;
+}
+.shopping_cart{
+    font-family:cursive;
+    font-size: 25px;
+}
 
 
 /* Footer Css  */
@@ -147,20 +156,33 @@ a{
     text-decoration: none;
     color:#454545;
 }
+
+
 /* Responsive */
-@media screen and (max-width : 700px){
+/* Desktop View */
+@media screen and (min-width: 701px) {
     .footer_container,
-    .bottom_footer{
-        flex-direction: column;
+    .bottom_footer {
+      flex-direction: row;
     }
-}
-@media (max-width:574px){
+  }
+  
+  /* Tablet View */
+  @media screen and (max-width: 700px) {
     .footer_container,
-    .bottom_footer{
-        width: 100%;
+    .bottom_footer {
+      flex-direction: column;
     }
-    
-}
+  }
+  
+  /* Mobile View */
+  @media screen and (max-width: 574px) {
+    .footer_container,
+    .bottom_footer {
+      flex-direction: column;
+      width: 100%;
+    }
+  }
 
 
 
