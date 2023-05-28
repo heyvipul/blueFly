@@ -14,12 +14,12 @@
       }
       #ch0{
         width: 10%;
-        border: 1px solid;
+        
        
       }
       #ch0>div{
-        margin: auto;
-        width: 90%;
+       
+        width: 80%;
         margin-top: 10%;
         margin-bottom: 10%;
       }
@@ -27,20 +27,20 @@
         width: 100%;
       }
       #ch1{
-        width: 40%;
-        border: 1px solid;
+        width: 55%;
        
+      
       }
       #ch2{
-        width: 45%;
-        border: 1px solid;
+        width: 35%;
+        
       }
       #ch1>img{
-       width: 80%;
-       height: 100%;
-      
+       width: 70%;
+       height: 60%;
+      object-fit:contain;
        display: block;
-       margin: 10% auto 10% auto;
+       margin: -100px auto 10% auto;
         
         cursor: zoom-in;
         height: 70%;
@@ -56,9 +56,277 @@
         display: flex;
         width: 70%;
       }
-      #ch2>div:nth-child(3)>div{
-       width: 100%;
+     
+      #ch2>h2:nth-child(1){
+        font-family: sans-serif;
+        font-size: large;
+         letter-spacing: 2px;
       }
+      #ch2>h2:nth-child(2){
+        font-family: serif;
+       
+      }
+       #ch2>div:nth-child(3)>div:nth-child(1)>p{
+        font-family: sans-serif;
+        letter-spacing: 1px;
+        text-decoration: line-through;
+        font-size: medium;
+       }
+         #ch2>div:nth-child(3)>div:nth-child(2)>p{
+           font-family: sans-serif;
+        letter-spacing: 1px;
+        
+        font-size: medium;
+         }
+         #ch2>div:nth-child(3)>div{
+          width: 100%;
+         
+         }
+          #ch2>div:nth-child(3)>div:nth-child(3)>p{
+            width: 100%;
+            font-family: sans-serif;
+        letter-spacing: 1px;
+        color: #ff4e4e;
+        font-size: medium;
+          }
+           #ch2>p:nth-child(4){
+            font-family: sans-serif;
+            color: #FF0000;
+            font-weight: lighter;
+           }
+           #ch2>h2:nth-child(5){
+            font-family: serif;
+            color: #FF0000;
+           }
+           hr{
+            width: 100%;
+           }
+           #ch2>p:nth-child(7){
+            font-family: sans-serif;
+            letter-spacing: 2px;
+            font-weight: lighter;
+            font-size: small;
+           }
+           #ch2>p:nth-child(8){
+            font-family: sans-serif;
+            letter-spacing: 1px;
+            font-weight: lighter;
+            font-size: small;
+           }
+           #ch2>button:nth-child(9){
+           
+            border: 2px solid;
+          padding: 8px;
+          font-family: Arial, Helvetica, sans-serif;
+         font-size: medium;
+           }
+           #ch2>div:nth-child(10){
+            width: 35px; height: 35px;
+            border: 2px solid;
+            border-radius: 50%;
+            margin-top: 25px;
+           }
+           #ch2>div:nth-child(10)>img{
+           width: 90%;
+           object-fit: cover;
+           border-radius: 20px;
+           display: block;
+           margin: auto;
+           }
+           #ch2>button:nth-child(11){
+            margin-top: 25px;
+            height: 35px;;
+            width: 90%;
+            color: #FFFFFF;
+            background-color: #111111;
+            letter-spacing: 2px;
+            font-family: sans-serif;
+            font-weight: 600;
+           }
+           #ch2>button:nth-child(11):hover {background-color: #474747}
+           #ch2>button:nth-child(11):active {
+  background-color: #abadab;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+#ch2>p:nth-child(12),#ch2>p:nth-child(13){
+  font-family: sans-serif;
+  color: #f00000;
+  font-size: medium;
+  letter-spacing: 1px;
+}
+#ch2>button:nth-child(14){
+  width: 90%;
+  background-color: #5A31F4;
+  display: flex;
+  justify-content: center;
+  color:  #FFFFFF;
+  font-size: small;
+  padding: 10px;
+  letter-spacing: 2px;
+}
+
+
+#ch2>button:nth-child(14):hover {background-color:#3610c2}
+#ch2>button:nth-child(14):active {
+  background-color: #abadab;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+#ch2>p:nth-child(15){
+  font-weight:lighter;
+  letter-spacing: 1px;
+  font-size: smaller;
+  text-align: center;
+  font-family: sans-serif;
+}
+#ch2>p:nth-child(15):hover{
+  cursor: pointer;
+}
+#ch2>div:nth-child(16){
+  display: flex;
+  
+}
+#ch2>div:nth-child(16)>img{
+margin-top: 16px;
+  width: 90px;
+  height: 22px;
+}
+#ch2>div:nth-child(16)>p:nth-child(3){
+text-decoration:underline;
+
+}
+#ch2>div:nth-child(16)>p:nth-child(3):hover{
+color: magenta;
+
+}
+#ch2>button:nth-child(17){
+  width: 90%;
+  height: 35px;
+  background-color: transparent;
+  font-family: sans-serif;
+  font-weight: medium;
+  font-size: medium;
+  border: transparent;
+}
+#ch2>button:nth-child(17):hover{
+cursor: pointer;
+color: magenta;
+}
+ul{
+  font-family: "Futura",sans-serif;
+  letter-spacing: 2px;
+  font-weight: 100;
+  font-size: small;
+}
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.9); 
+}
+
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 500px;
+}
+
+
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 800px) {
+  
+ #parent{
+  display: block;
+  width: 95%;
+ margin: auto;
+  
+ }
+ #parent>div{
+ 
+  width: 95%;
+ }
+ 
+ #ch0{
+  display: flex;
+
+ }
+ #ch0 img{
+  height: fit-content;
+ }
+ #ch1{
+ 
+  height: 90%;
+  
+ }
+ #ch1>img{
+  object-fit: contain;
+  width: 60%;
+  margin-top: 5%;
+ 
+ }
+}
     </style>
 </head>
 
@@ -73,35 +341,61 @@
            <img src="" alt="">
         </div>
         <div id="ch2">
-            <h3></h3>
+            <h2></h2>
                 <h2></h2>
                 <div>
                   <div><p></p></div>
                   <div><p></p></div>
                   <div><p></p></div>
                 </div> 
+                <p>FINAL SALE</p>
+                 <h2>EXTRA 15% OFF IN CART</h2>
                 <hr>
-                <p></p>
-                <p></p> 
+               
+                <p>SIZE</p> 
+                <p>(Please reference sizing images on a product if available;
+                   if unavailable please use our size and conversion guide 
+                   for proper sizing.)</p>
+                <button>Medium</button>
                 <div>
-                  <div></div>
-                  <div></div>
+                  <img src="" alt="">
                 </div>
-                <div></div>
-                <p></p>
-                <button></button>
-                <p></p>
-                <button></button>
-                <p></p>
-                <p></p>
-                <a href=""></a>
-                <button></button>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
+                
+                <button>ADD TO CART</button>
+                <p>FREE SHIPPING ON ORDERS OVER $99</p>
+                <p>FINAL SALE: No Returns or Exchanges are accepted.</p>
+                <button>BUY WITH SHOP PAY </button>
+                <p>More payment options</p>
+                <div>
+                  <p>More payment options</p>
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAdoAAABqCAMAAAAsh2BcAAAAnFBMVEX///9aMfRXLPRMF/OEafbd1/xWK/RZL/RHBvN1WPX7+f7Wz/zo4f1vT/VTJPRUKPSllviUefeaiPZnQPTv6/2AYvZnRfV7XvW0o/jBsPqrlfhQH/T29P60p/mgj/f59/7Qxvzt6f1iOfPGvfvn4/2/tPp4VPbSy/uLcfbi3P2qnPluSvWRe/eXhPfCuPpCAPOHbfayoPqehvfNwvwNpV76AAASW0lEQVR4nO2dCXfyKBSGDdHgUsHdWuJelzZaa/3//20SJQkXCK5oO5/vmTNnpmblYbnceyG53L1UdFLhzt1ue3uNx7N1/iFq16cv40e/vkb/E7Qf20mRUQ89RB5znW3h0UWg6P+BdlZlyHmkMAteH10Isv4PaFvf5LFgIyHqlB9dEFD/A7StgDwMqCg6bz26KID+Ptrxkj6MJhQp+Y8uDFEiWvQn0fYYfhhMSWz56MIQ9edbbWXzMJKKcLHy6OIQ9OfRdr2HkVTldR9dHIL+PNpf1GjDEmwuHl0eqf462tXvsI5jsdqjCyTVX0eb/039cTgBWv0eI/mvo/1VQ204yQg+Hl0iif442tb88X4oUdj5PTbyH0f7Uv1laOl90JYL095n7bW3e88+5nZoP776tUGkWn90txhXBlpEVHkI2/dtYM8+2nJh3elMwltRhJ1mECwrZa33+hZoy/6uHQRNB9GoCCnFk2ZQfWvdw1uuR4tKb4p+8p2mQ22PzNbRDguzjUvCWrqvp+G/EaLuplvQNKar0fqFT1pkFAltYn9DUmT9inV/uR4t+dQfXRksLQf/bKN9WSGmua3n5tVXzkQ7Hs1eZ1+FY7Z8v46yfLiYse9ZZtOdvfYTvc7EX/xR9NuuMjzlVfVoM2eXw1mgK5qbyTLaQYdkFLbHvuU769F+1LvViUMcJyh114aBc9oNu1/Dm1JcmunPLFeJl4gEaQ1465YmDqV00im160fL6Vy0YcVZuxaHXKtox0vX0OfQTQ8eron8+F+OS/dGR9SzesTd9LR0h5UiOzZ2YVRcak8ul4SnRPPDH/1KdcO4uRPdmrru2tx4z0eby/Um9jplm2gL8yOet2IPlJXaagt5pVqzoK/eabw6LZpGmpqTIVp8QFuoF+WqgklxPTK87iVoczPHWru1iLZQPRaXxgyUtIL2raO5AiJ1ufH05lndvnIyWqkPqkH7FmivSCbt7IZ7EdrcwD3tyc+XPbSt/HFvOXbFPllCW84YiTDpwJjGyj19HoHZSoGjoA0H34x+ElPWz7LGjqD1FwWuyngsXGNlKzHDGtpy4xTzDxdf0lMA2iAklnUW7YjpmIXOWeMV6cquVYi2mvNNlRK7y4yGewTtp5uKDdLK+WLLlLKGdnRaR0Pz6SkQ7cjgsKFV8VZn1ns6lx4VmlHtXNvc3bC8fop8BO2rWH8ISoeitiXfhTW0p5oHJG2ARfDDxHQBUhdu5TfVMsUepST8h1D1NyKNt7DVto8Zfw6pakMqZ6CN4Ca5wu+WRltbaL/k8vEYc1ko+fW9FBJEa6waGItz1BksHEwYabbrjb3WXaJMi9w1GC8B2tDSOlpoVNtuz0IbTg/iN/AtxXltoa3DTpK6+d000qwj2TyolAQMIFqzaEmcogZpsWHiTmrTXWUcj4jvu6+2PJwRMKOGaE8R+da88plokROf2LPjlLKEVqqJJD+OvYS+NNvF6Cs+6Ry0jjsSbrfjzRZTin5aSjDAHyHYL2Mq/nw+Wodp2J6J1mFx/Zr+KbQ7MFJSWBB50KKTNzwPLWbiJWv76oK8ZVaq17YD6hqwwy5Ai+mXcotz0aKA/1LpgE4lcn1R73ovlSW0M+DOdeHQ1AKuI7KN/65Hi0g4Qmu8w65oy3xEpcOynMSRCmDwxpNR+lM22v29tc4LNFcCz2ejrfLe5b2b/BQOJ26z9L1at0vYBTZCZBeG0gzLfI2e8ndraME9YMzGDwR3vMeS7CwNWsQ2wXa6mK6p4pagID3+k2G3bozbvW9AR9JOD9ajxdQtzgej0W4wKTJPwev25BucixZ3+Jy+FY9enus2Xj7exy3fb41fPkbdYlKl8WRZD7XqKp23251HaitzxXuglVtt+bXUTlV6jYdGBS2m1Wl8UkV+KQTmtrmgs82Z9Q5c8W7ao2rRkuYqnZZ9tSfK3Lkor2I9G22T9zscLSZ5eTgZ1uNnTi7TkB6ExT3VpzwnsYUWVHOmc8qrktFi50ds7kvIFjdB2Q5fcsc0Eg0AFCTX1qDF7hqWy64tNxdaly5/fqvlRv5477RAzYHmmRfo8Mw09o/2pdbpxs+pzBYtoZ3Ckc0bnXKSjJa9AVN3WIf1kmryFz6MfTKw34rJ7ElFi6ni1G8NpBkUdqUjzkXrxd3OR3R/1Blpn5mvI8KYt+ghdOV4bf4aLcUcsYT2Yy5NNhonZJ9JaJXJY6UJnp4otdxveHNj7q3Yl6RrYhS02JlqTm5IAy55g7+fjTZ2eI6idsB0t4z0degukp4PulWT/BzV22rLZfEN74Tp5nVxrMuEaIUeMxZcvaqg3TUZZhmpSAeJzgGM4j5BQeuqM5tIA9gwvDz8+Vy0bgwzmteSdXqh90KhkJZVbGQVeXH4wNU+4RcZd9VBxRLatVKJCJvXalNTfhNEyxQTNDcC4x2tw4tNo5QOPDF1Dy3hFqmvREbLdINeKL8NXgoH0JA6Ey3G8YlhhcMkHkmG/UG302yWGsnr9w/jEOOPWxZvk3Q9MzVEYgttS5P2gAiZVLvrzC4ToMV4dOQIrw2mltNDm1K7aVGvwnBN44YiofXaWQN2C45zBO4Gch5anLjT/PD2JDErmt4+SxkR2uB/4R4NPOH/L8bUPD5oDX/UmIa1yM9SGz/Z5zcVm7WCrnOG4HQueFBfEAjAzOJp68ZkSe1EtPHEWEKLsu35NXgpKQ/1LLQorbkf4XuzHf+fIJ3JunHN4XMjj9fkglDBXN5HfWiiR9bQ+tXseAYibqemeo4AWrrWXDQQiwc3hUefJmtbqWmlv2je4YCfD9HiTnY+ui91G6DzPydey5x0ChuZJeHstBwqtxCwJSvtuGEfl0hZaKFFfo2Rxg1tL4Hmy5gej4m3NCWrOkl/JArEk0S0lbRI9OZtLNEGiP3AEK2paoBxLqwbYGw5lmVRTLSh27TXqkQNDlcPu7WJkWfc4c2U9xWoy2tSD8Uvm4w+uuC2xbS3nS5pTbgzdavQD3s52rFo4JC1Iae0IXSpsSMHonVNBQLjb/DQY2lvLZ8LXLF8eHR88LoeRlWMoggBmXD+A/7MJO7oktWeRV6ALzr3u81k1UrJnEKKKVqIFC5H+wWGGhDvk1QTrqBHW8w+OZdbwBudhVar8hpUFkyZ6+JOqdte1usDbjVsOVq65rUi7npwwNuxdk8juynmA4aMcBEWp/2Xo4WJb+xNcypXT3CTxWaQhNa09OvmaLfp84RWcZH+jCqVwsf7eBy27vhBZixmxRtpPOQzbmj52jtbXhhSaTrGFGGQiXwxWtho0cSw/eROQEt5z30G2grwSF2P9i0tHex1Pn3tvZNRgPzwv/CXINxYeNWOfNZX6k0bTeOKNCHsejHakmiwkW/DEl6IlpugD0Nb+E790miyzTIRErSJ2/rwFy/PO+iBfqJpf31tZVYqkszMU2+ezCAuRiv2x7RkjBCIaL3vw6HnoAWFeB3a8aCZXg0rMcJUqe3m8oPe98VJeWbmR0dbuPdYOp3zW5/hg1A1nr1/d30CzRloRwIuFJg91Vd2yLcba7++xUWMmBkGkRRtkrW9Txjy+GD2pc+tugvaSH5t9U11iTAoiDvQS9HWhMrvjMyPIToOSONAEaI1brckOirDsgM8jqAt7NMkDgr2K7zFo9LH9veLRxa77VudF0yKFlV5FzcNmwnmKZHDjIztu6GNnmE6WzFXGfKTun8pWmGu6n0fWeQ8ECfA3MCEaD15cYH4BqAUpR7iCNo1o4nkeUPqVW19LtFh7QghsRkiTKbjwFaUMeqVDv+tczLeG230SO+F5UaymROXysVo0796P5qzRAGXBR8KJEejwcBuSb5Q4H04gnZgcOAkkf9C102dyA6vOQJays2DaGrrcl9lPuPCd0Z7eMkJcEEmdt8N0Bpc+3sNxSsQrcsChE4lwRUo7KzIjwEtnvD2+SLmaCcRKNEFVuQ8Cwi7vGJlraB5BNrcFBZC7P+5Hi3GJv9xKNH9nhwsoc1utjNo53uwHl2BNt7dYScaREkWr4iWxMXSIXx1y1fW5MMO2t72lWvQaDTUO8DXvBptUtUx3mnOErQTxiUUJ9vIoXha0hvJ4xLsbc4LxZ+EVni8NIsd5Ia4/NlmG/6qmZt+2kFbTLKMQ5vBVYPj72Amdju0DjJnrLbEqGA8LVQTaFhed/JYGtTOTKA5Ba0Ym2PJuABiEvEoMPw69MeLzBWNdtCCjYGpug59CAKv16IVnDHaKG8qMC1N7qBmNJK6mugz7krNQ87wuQJtM05LzKeOp/QRAFovgHftZy4YsoMW1CSMRvLvcNC6Fm0/nUskvje9xBqFcfzmmmRVLy+n+RRkss5GOuIKtE7c974sN4x6HnEn/bQ9ALTSppqt7I0h7aCFmewIS76/F7i97LVox0JNIoZlP7ktLKP4z7rVA3QCsmPKjYmcWMDkvv+ayU/ysuXW7ie/fPsQaygMEsOCMay7toNWmkXj4puQauKP4CoL3OQ/XOxDFhqj181utlOwMiRNI9YuDEGsuKoU3n3fHxcqDVeJX+Gm7Ku+Ai3IBVIE0SJgvWnS3ZKLWkH7Lu8cwuafr7txuZwbT/vyPmHJqpWL0Yp/Zpmj7QJka2FmWhhyeAR3UqrXl12iglUmtbmr0DpkpTHK4z9JS6tBMrrhcweW5rWf8uAeJarOu93u3CGyH3kTD2sXox2LZ2oM8r0qsEsV+tPsRZgYabyCe3klJd/5GrTKUoRQhZLiQz6UjGCW9k175dhBq3tNjMLJkFpOZKBdqXcO2vJcpOauNAHb1gD2FWKm6yVLp4m6RvvIzqo1I1rsLmEH72838XKvmdRONun7mXavseWN+jx1wx/hmyWXJ9DAWBtxepJ9O+7JaVqe0J9esuGB5luTerTe9+ig5ZGbkOB1kfTKhVme4Ul/EZ1YkfYFEeKEi2bWpNaxh7Zs2ngTPGc68b8crQ/fHrP5Sph0fq278iY0qCnMtS/YpqSrGRozdjGnzmSvo5stYdZcrta17XawqgfEi6Zn+xObyoFJZl72pNax6ENuKbMFrTxh3+Mr8pCn0urScIzEaFLK5/NVFO2eLr81EXs/2Yd8FALN6xYWZX17AB907KLRkWnUz3gmi9PfjF9ntBceeAlOYIsmQtd5Bdrcj1J/97vsevpd/mF/KgX1mscaGMlrs6/u9lkJTPgdK8aNXSxGft6Pb67lTcTljtegbZ1SkWKxlWFLMO+7by4x1tYvBrwb2iQPRF0OCR7UYlCvlZENldybVEHs5Bq0ucLpX3uWv/8poW3naobUeEQ+z9p+8/byEK9aZfNuTFbjtf7WMdQrz5GWvV+FNlc4dUNw5cuuEtpuaN9nGQqYVTM9mXdC6yXhZKMRZT0Uv1gWM2wLVGwvJDPzOrS5gmteqsDPchV3lYo2t5vrtrLFxPnM3lDBNloU7dKPGE56uiNfA7OdZTGsVF0qWaiRj4cF6gdArkSbK5hXKuzlka0yb9Ggzfk7F27KGj40cX9MOc6W0dI5Zow1Z8lA3ztidd8jgWa9LEW719J9aJ4Q5nSXDV0ZbTxxpzAd2qW4lxidyI/e+tFskSsKkZLGuNWhDdVbzhnbL1EPn5qh6jJrkOWyi1bxRL6XjhiO98mNeun1to1lt93Or7a9/jRju4luV9gprKvbb6Q/F49YqphmgWlxIGn2dVUqA20u99Hv1b7nnaC97PdnRz8raRntQOptBsc27bxf2tvQb4UyRcpbQLojy2NwiOaI8Wf0KTDdiyLirvWrgaT9kMGHuMut8cu79k6K7ou2Z/yo0f6NH5HRaFf1kkOkWRemZFLK3L/EhPYM3RVt77hZ8T9EmyvPPr+pGw6T0Zefon1R3Gb905Dq+PfQlmsn7P9/r4+c3lmtymI2aFcdUp0vt5WF+XN8mWPtebKMVrA9pstTvmv0P0W7V7k8HJb131OFx90GbVndcO2Gws54uNf7T2ByBIlnGFb//SO6Edqcpc9DcCG3yJBXLGaYiao8bXzq39Kt0BpDbLfQaaHBWOZ97/4N3QrtiV+tupfosb2//wHdCm3uxJ7yPkJV69/Z/v26GdrZb2q25Nlob4i21bU92p4uvDk+Nfj/62Zocwt7Hxo+U5iatlj6Z3Q7tKEl9TvYYqzGLv9F3RBtbre5U4KUUdh9PbJdyz+iW6LNVeanJ2lZEvKefiiuG4UHuPxaSd1A6Y5CrPP2nPbECoqiDPtGnaaXr+XGfZRYu/dssqlgDsANqvyw1fooPEIv5mSHp5566qmnnnrqqaeeeuqpp5566qmnnnrqqaeeeupf139JwHmqjFw/UwAAAABJRU5ErkJggg==" alt="">
+                  <p>View sample plans</p>
+                </div>
+                
+              
+                <button>🤍 ADD TO WISHLIST</button>
+                <p>Usually ships in 1 to 2 business days</p>
+               <ul>
+                <li>Price As Marked</li>
+                <li>About The Brand: Iconic, Modern Glam. Tres Chic</li>
+                <li>Made In Italy</li>
+                <li>Interior Design Details: One Main Compartment, One Flat Pocket</li>
+                <li>Measures 9.5In Wide X 7In High X 2In Deep</li>
+                <li>Shoulder Strap Drops 21.6In</li>
+                <li>Magnetic Closure</li>
+                <li>Please Note: All Measurements Were Taken By Hand And Are Approximate; Slight Variations May Occur.</li>
+                <li>Our Products Are 100% Genuine. In Some Cases We Purchase Merchandise From Trusted Independent Suppliers And Not Directly From The Brand Owner.
+                   In All Cases We Stand By The Authenticity Of Every Product Sold On Our Site.</li>
+                <li> SKU: BF-104024537-07K7</li>
+                
+                <!--append here-->
+               </ul>
         </div>
+    </div>
+    <div id="myModal" class="modal"><!--pop up-->
+      <span class="close">&times;</span>
+      <img class="modal-content" id="img01">
+      <div id="caption"></div>
     </div>
 </body>
 <script>
@@ -131,9 +425,9 @@
 {  brand_name:"The Man Company",
 productType:"mansCream",
      name:"The Man Company Skin Brightening Cream with Multani Mitti, Coco Butter | Removes Blackhead - 30 gm",
-    image_url:"https://m.media-amazon.com/images/I/41NS+PHtALL._AC_UL400_.jpg",
-    image_url1:"https://m.media-amazon.com/images/I/51RnKYG8KgL._SX425_.jpg",
-    image_url2:"https://m.media-amazon.com/images/I/616o0mk5IcL._SX425_.jpg",
+     image_url:"https://m.media-amazon.com/images/I/51QZU5qQRVL._SY450_.jpg",
+    image_url1:"https://m.media-amazon.com/images/I/71YpI+Nin1L._SY450_.jpg",
+    image_url2:"https://m.media-amazon.com/images/I/71LBwLbxtxL._SY450_.jpg",
     strikedoffprice: "299",
     price: "189",
     save: "save 30%",
@@ -283,6 +577,7 @@ productType:"mansclothing",
       extrasave : "Extra 15% OFF"
 }
   ];
+  var cartData=JSON.parse(localStorage.getItem("cartData"))||[];
   var product=JSON.parse(localStorage.getItem("product-pge-item"));
   document.querySelector("#ch1>img").setAttribute("src",product.imgs);
   document.querySelector("#ch0>div>img").setAttribute("src",product.imgs);
@@ -291,6 +586,7 @@ productType:"mansclothing",
     var img=document.createElement("img");
     img.setAttribute("src",product.imgs);
     document.querySelector("#ch1").append(img);
+    popup();
   });
   document.querySelector("#ch0>div:nth-child(2)>img").setAttribute("src",product.img2);
   document.querySelector("#ch0>div:nth-child(2)>img").addEventListener("click",function(){
@@ -298,6 +594,7 @@ productType:"mansclothing",
     var img=document.createElement("img");
     img.setAttribute("src",product.img2);
     document.querySelector("#ch1").append(img);
+    popup();
   });
   document.querySelector("#ch0>div:nth-child(3)>img").setAttribute("src",product.img3);
   document.querySelector("#ch0>div:nth-child(3)>img").addEventListener("click",function(){
@@ -305,12 +602,48 @@ productType:"mansclothing",
     var img=document.createElement("img");
     img.setAttribute("src",product.img3);
     document.querySelector("#ch1").append(img);
+    popup();
   });
-  document.querySelector("#ch2>h3").innerText=product.brand;
-  document.querySelector("#ch2>h2").innerText=product.discription;
+  document.querySelector("#ch2>h2").innerText=product.brand;
+  document.querySelector("#ch2>h2:nth-child(2)").innerText=product.discription;
   document.querySelector("#ch2>div:nth-child(3)>div:nth-child(1)>p").innerText=product.rprice;
   //console.log(product.price);
   document.querySelector("#ch2>div:nth-child(3)>div:nth-child(2)>p").innerText=product.price;
   document.querySelector("#ch2>div:nth-child(3)>div:nth-child(3)>p").innerText=product.saving;
+  document.querySelector(" #ch2>div:nth-child(10)>img").setAttribute("src",product.imgs);
+  popup();
+ function popup(){
+    var modal = document.getElementById("myModal");
+    var img = document.querySelector("#ch1>img");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+
+var span = document.getElementsByClassName("close")[0];
+
+
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+document.querySelector(" #ch2>button:nth-child(11)").addEventListener("click",function(){
+var obj={};
+obj["image"]=document.querySelector("#ch1>img").getAttribute("src");
+obj["name"]=document.querySelector("#ch2>h2:nth-child(2)").innerText;
+var pr=document.querySelector("#ch2>div:nth-child(3)>div:nth-child(2)>p").innerText;
+
+pr=pr.substr(1,pr.length);
+
+obj["price"]=pr;
+cartData.push(obj);
+localStorage.setItem("cartData",JSON.stringify(cartData));
+alert("Added To Cart");
+console.log(cartData);
+});
+}
 </script>
 </html>
