@@ -1,13 +1,19 @@
 
 
 body>#offerLine{
-    width: 100%;
+    display: block;
+    margin: auto;
 }
 body>#offerLine>img{
     width: 100%;
+    height: 100%;
+    margin: auto;
 }
 /* carousel middle */
 #Hero-carousel{
+    display: block;
+    margin: auto;
+    width: 100%;
     margin-top: 10px;
 }
 #Hero-carousel .c-item{
@@ -48,6 +54,44 @@ body>#offerLine>img{
      font: 26.6px "Tiemann",serif;
 }
 
+/* recommended_gallery_item */
+/* .recommended_gallery_item{
+    float: left;
+    width: 20%;
+} */
+#pagination #content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#pagination #content>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2 solid lightgray;
+    padding: 2rem;
+    margin: 2rem;
+    
+}
+#pagination #content img{
+  max-width: 150px;
+  margin: 1rem;
+}
+#pagination #nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#pagination #nav span{
+  font-size: 1rem;
+  border: lightgray solid 1px;
+  padding: 1rem;
+  margin: 1rem;
+  background-color: #000000;
+  color:#FFFFFF;
+}
 /* women_section_offer */
 #women_section_offer{
     position: relative;
@@ -81,6 +125,12 @@ body>#offerLine>img{
     margin-top:-250px;
     text-align: center;
     color: #FFFFFF;
+}
+#women_section_offer>div button{
+    background-color: #FFFFFF;
+    font: 12px "Futura",sans-serif;
+    padding: 8px 14px;
+    border: none;
 }
 /* shop_by_category_hp */
 #shop_by_category_hp{
@@ -148,7 +198,101 @@ body>#offerLine>img{
     border: none;
     border-radius: 0;
 }
+/* new_arrival */
+#god_father{
+    display: block;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+}
+#god_father>h2{
+    font: 32.68px "Tiemann",serif;
+}
+#god_father>a{
+    border: 0.5px solid black;
+    text-decoration: none;
+    color: #000000;
+    font: 12px "Futura",sans-serif;
+}
+#new_arrival_parent{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    padding: 20px 0 100px 0;
+    align-items: center;
+}
+#new_arrival_parent>div{
+    width: 200px;
+    height: 250px;
+}
+#new_arrival_parent>div>p{
+    font: 14px "Futura",sans-serif;
+}
+#new_arrival_parent>div>div>p{
+    font: 13.6px "Futura",sans-serif;
+}
+#new_arrival_parent>div>img{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+#new_arrival_parent>div>div{
+    display: flex;
+    justify-content: space-around;
+}
 
+
+#god_father_2{
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+#god_father_2>h2{
+    font: 32.68px "Tiemann",serif;
+}
+#god_father_2>a{
+    border: 0.5px solid black;
+    text-decoration: none;
+    color: #000000;
+}
+#trending_now_parent{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    width: 80%;
+    height: 100%;
+    padding: 20px 0 100px 0;
+    margin: auto;
+    justify-content: center;
+}
+#trending_now_parent>div{
+    width: 200px;
+    height: 250px;
+}
+#trending_now_parent>div>p{
+    font: 14px "Futura",sans-serif;
+    margin:20px 0 10px 20px;
+    width: 90%;
+    text-align: center;
+}
+#trending_now_parent>div>div>p{
+    font: 13.6px "Futura",sans-serif;
+    justify-content: space-between;
+}
+#trending_now_parent>div>img{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+#trending_now_parent>div:last-child>img{
+    margin-top:126px;
+    height: 50%;
+}
+#trending_now_parent>div>div{
+    display: flex;
+    justify-content: space-evenly;
+}
 /* women_section_offer */
 #women_section_offer_2{
     position: relative;
@@ -180,7 +324,7 @@ body>#offerLine>img{
     margin: auto;
     height: 200px;
     text-align: center;
-    color:black;
+    color:#000000;
     text-align: center;
 }
 #women_section_offer_2>div h3{
@@ -189,29 +333,15 @@ body>#offerLine>img{
 #women_section_offer_2>div p{
     font: 16px "Futura",sans-serif;
 }
-/* women_section_offer_2 */
-/* #women_section_offer_2{
-    display: flex;
-    width: 85%;
-    margin: auto;
-    padding-top: 20px;
+#women_section_offer_2>div button{
+    background-color: #FFFFFF;
+    font: 12px "Futura",sans-serif;
+    padding: 8px 14px;
+    border: 0.1pc solid black;
 }
-#women_section_offer_2>div img{
-    width: 300px;
-    height: 200px;
-    object-fit: cover;
-    justify-content: center;
-}
-#women_section_offer_2>div{
-    width: 70%;
-    height: 100%;
-    margin: auto;
+
+@media only screen and (max-width: 780px){
     
 }
-#women_section_offer_2>div>img{
-    width: 70%;
-    height: 90%;
-    margin: auto;
-    align-items: center;
-    justify-content: center;
-} */
+
+/*  */
