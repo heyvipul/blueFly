@@ -72,23 +72,31 @@ body>#offerLine>img{
     border: 2 solid lightgray;
     padding: 2rem;
     margin: 2rem;
-    
+}
+#pagination #controlph{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  
 }
 #pagination #content img{
   max-width: 150px;
   margin: 1rem;
 }
+#pagination #recommended_p{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+}
 #pagination #nav {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
 }
 #pagination #nav span{
   font-size: 1rem;
   border: lightgray solid 1px;
-  padding: 1rem;
-  margin: 1rem;
+  padding: 0.5rem;
   background-color: #000000;
   color:#FFFFFF;
 }
@@ -233,6 +241,12 @@ body>#offerLine>img{
 #new_arrival_parent>div>div>p{
     font: 13.6px "Futura",sans-serif;
 }
+#new_arrival_parent>div>div>p:first-child{
+    text-decoration: line-through;
+}
+#new_arrival_parent>div>div>p:last-child{
+    color: #FF4E4E;
+}
 #new_arrival_parent>div>img{
     width: 100%;
     height: 100%;
@@ -279,6 +293,12 @@ body>#offerLine>img{
 #trending_now_parent>div>div>p{
     font: 13.6px "Futura",sans-serif;
     justify-content: space-between;
+}
+#trending_now_parent>div>div>p:last-child{
+    color: #FF4E4E;
+}
+#trending_now_parent>div>div>p:first-child{
+    text-decoration: line-through;
 }
 #trending_now_parent>div>img{
     width: 100%;
