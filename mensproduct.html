@@ -15,10 +15,10 @@
 <body>
     <div id="whole">
     <div id="sec">
-    <select id="type">
+    <select id="type" onchange="handleprice()">
         <option value="">Price Filter</option>
-        <option value="low">LOW TO HIGH</option>
-        <option value="high">HIGH TO LOW</option>
+        <option value="lth">LOW TO HIGH</option>
+        <option value="htl">HIGH TO LOW</option>
     
     </select>
     <select id="types">
@@ -113,6 +113,7 @@
   </footer>
 
 </body>
+
 <script src="SCRIPTS/menproduct.js"></script>
 
 </html>

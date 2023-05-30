@@ -225,10 +225,29 @@ var  mensdata=[
  }
    ]; 
     
- displayproduct();
+ displayproduct(mensdata);
+
+ function handleprice(){
+  var selected  = document.getElementById("type").value;
+  console.log(selected);
+  if(selected==="htl"){
+    mensdata.sort(function (a, b) {
+      return b.price - a.price;
+    });
+
+  }
+ else  if(selected==="lth"){
+    mensdata.sort(function (a, b) {
+      return a.price - b.price;
+    });
+  }
+  displayproduct(mensdata);
          
-   function displayproduct(){
-     mensdata.map(function(elem){
+
+ }
+
+   function displayproduct(data){
+     data.map(function(elem){
          var div = document.createElement("div");
  
      var image = document.createElement("img");
@@ -348,3 +367,5 @@ var  mensdata=[
  
    }
  
+      
+   
