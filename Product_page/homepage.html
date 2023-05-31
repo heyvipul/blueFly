@@ -1,0 +1,1171 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <style>
+        
+
+body>#offerLine{
+    display: block;
+    margin: auto;
+}
+body>#offerLine>img{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+/* carousel middle */
+#Hero-carousel{
+    display: block;
+    margin: auto;
+    width: 100%;
+    margin-top: 10px;
+}
+#Hero-carousel .c-item{
+    height: 650px;
+}
+#Hero-carousel .c-img{
+    height: 100%; 
+    object-fit: cover;
+    filter: brightness(0.8);
+    
+}
+#Hero-carousel .carousel-caption{
+    top: 0;
+    margin-top:260px;
+    align-items: center;
+}
+#Hero-carousel .carousel-h1{
+    font: 73px "Tiemann",serif;
+}
+#Hero-carousel .carousel-p{
+    font: 20.8px "Futura",sans-serif;
+}
+#Hero-carousel .c-item button{
+    font: 13px "Futura",sans-serif;
+    font-weight: bolder;
+    background-color:#FFFFFF;
+    color: #000000;
+    margin: 0 5px 2px 0;
+    padding: 11px 20px;
+    border: none;
+    border-radius: 0;
+}
+#home_page_products1{
+    padding: 20px 20px 0;
+    text-align: center;
+}
+#home_page_products1 p{
+     font: 26.6px "Tiemann",serif;
+}
+
+/* recommended_gallery_item */
+/* .recommended_gallery_item{
+    float: left;
+    width: 20%;
+} */
+#pagination #content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#pagination #content>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2 solid lightgray;
+    padding: 2rem;
+    margin: 2rem;
+}
+#pagination #controlph{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  
+}
+#pagination #content img{
+  max-width: 150px;
+  margin: 1rem;
+}
+#pagination #recommended_p{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+}
+#pagination #nav {
+  display: flex;
+  flex-direction: row;
+}
+#pagination #nav span{
+  font-size: 1rem;
+  border: lightgray solid 1px;
+  padding: 0.5rem;
+  background-color: #000000;
+  color:#FFFFFF;
+}
+/* women_section_offer */
+#women_section_offer{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 98%;
+    margin: auto;
+    overflow: hidden;
+    padding: 25px 0;
+}
+#women_section_offer>div{
+    width: 100%;
+    padding: 17px 0 0 17px;
+    height: 500px;
+}
+
+#women_section_offer>div>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: auto;
+}
+#women_section_offer>div>div{
+    margin: auto;
+    margin-top:-150px;
+    text-align: center;
+    color: #FFFFFF;
+}
+#women_section_offer>div:nth-child(2)>div:nth-child(2){
+    margin: auto;
+    margin-top:-250px;
+    text-align: center;
+    color: #FFFFFF;
+}
+#women_section_offer>div button{
+    background-color: #FFFFFF;
+    font: 12px "Futura",sans-serif;
+    padding: 8px 14px;
+    border: none;
+}
+/* shop_by_category_hp */
+#shop_by_category_hp{
+    display: block;
+    text-align: center;
+}
+#shop_by_category_hp_div{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    width: 80%;
+    height: 40%;
+    margin: auto;
+    text-align: center;
+    align-items: baseline;
+    padding: 0 0 0 22px;
+}
+#shop_by_category_hp_div>div{
+    height: 55%;
+    object-fit: cover;
+    padding:20px 0 20px 0;
+}
+#shop_by_category_hp_div>div img{
+    width: 200px;
+    height: 170px;
+    padding:198.141 0 0;
+    object-fit: cover;
+}
+#shop_by_category_hp_div a{
+    display: block;
+    margin: auto;
+    color: #000000;
+    text-decoration: none;
+    
+}
+/* carousel lower */
+#Hero-carousel_2{
+    margin-top: 10px;
+}
+#Hero-carousel_2 .c-item{
+    height: 450px;
+}
+#Hero-carousel_2 .c-img{
+    height: 100%; 
+    object-fit: cover;
+    filter: brightness(0.8);
+}
+#Hero-carousel_2 .carousel-caption{
+    top: 0;
+    margin-top:70px;
+    align-items: center;
+}
+#Hero-carousel_2 .carousel-h1{
+    font: 73px "Tiemann",serif;
+}
+#Hero-carousel_2 .carousel-p{
+    font: 20.8px "Futura",sans-serif;
+}
+#Hero-carousel_2 .c-item button{
+    font: 13px "Futura",sans-serif;
+    font-weight: bolder;
+    background-color:#FFFFFF;
+    color: #000000;
+    margin: 0 5px 2px 0;
+    padding: 11px 20px;
+    border: none;
+    border-radius: 0;
+}
+/* new_arrival */
+#god_father{
+    display: block;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+}
+#god_father>h2{
+    font: 32.68px "Tiemann",serif;
+}
+#god_father>a{
+    border: 0.5px solid black;
+    text-decoration: none;
+    color: #000000;
+    font: 12px "Futura",sans-serif;
+}
+#new_arrival_parent{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    padding: 20px 0 100px 0;
+    align-items: center;
+}
+#new_arrival_parent>div{
+    width: 200px;
+    height: 250px;
+}
+#new_arrival_parent>div>p{
+    font: 14px "Futura",sans-serif;
+}
+#new_arrival_parent>div>div>p{
+    font: 13.6px "Futura",sans-serif;
+}
+#new_arrival_parent>div>div>p:first-child{
+    text-decoration: line-through;
+}
+#new_arrival_parent>div>div>p:last-child{
+    color: #FF4E4E;
+}
+#new_arrival_parent>div>img{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+#new_arrival_parent>div>div{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+#god_father_2{
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+#god_father_2>h2{
+    font: 32.68px "Tiemann",serif;
+}
+#god_father_2>a{
+    border: 0.5px solid black;
+    text-decoration: none;
+    color: #000000;
+}
+#trending_now_parent{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    width: 80%;
+    height: 100%;
+    padding: 20px 0 100px 0;
+    margin: auto;
+    justify-content: center;
+}
+#trending_now_parent>div{
+    width: 200px;
+    height: 250px;
+}
+#trending_now_parent>div>p{
+    font: 14px "Futura",sans-serif;
+    margin:20px 0 10px 20px;
+    width: 90%;
+    text-align: center;
+}
+#trending_now_parent>div>div>p{
+    font: 13.6px "Futura",sans-serif;
+    justify-content: space-between;
+}
+#trending_now_parent>div>div>p:last-child{
+    color: #FF4E4E;
+}
+#trending_now_parent>div>div>p:first-child{
+    text-decoration: line-through;
+}
+#trending_now_parent>div>img{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+#trending_now_parent>div:last-child>img{
+    margin-top:126px;
+    height: 50%;
+}
+#trending_now_parent>div>div{
+    display: flex;
+    justify-content: space-evenly;
+}
+/* women_section_offer */
+#women_section_offer_2{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 25px 0;
+}
+#women_section_offer_2>div{
+    display: block;
+    
+    width: 100%;
+    padding: 17px 0 0 17px;
+    height: 600px;
+    margin: auto;
+}
+
+#women_section_offer_2>div>img{
+    display: block;
+    width: 330px;
+    height: 356.66px;
+    object-fit: cover;
+    margin: auto;
+}
+#women_section_offer_2>div>div{
+    display: block;
+    margin: auto;
+    height: 200px;
+    text-align: center;
+    color:#000000;
+    text-align: center;
+}
+#women_section_offer_2>div h3{
+    font:26px "Tiemann",serif;
+}
+#women_section_offer_2>div p{
+    font: 16px "Futura",sans-serif;
+}
+#women_section_offer_2>div button{
+    background-color: #FFFFFF;
+    font: 12px "Futura",sans-serif;
+    padding: 8px 14px;
+    border: 0.1pc solid black;
+}
+#mydiv{
+    width: 0%;height: 0%;display: none;
+}
+#mydiv>img,#mydiv>p{
+    display: none;
+}
+@media only screen and (max-width: 780px){
+    
+}
+
+/*  */
+    </style>
+</head>
+<body>
+    <div id="offerLine"><img src="asset/MEMORIAL_DAY_PROMO_TOP_BANNER_1_1600x.webp" alt=""></div>
+    <div id="Hero-carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active c-item">
+            <img src="asset/shutterstock_773947222_97e3ce6e-89fa-4a0f-a5d5-d0d373ae995e_1944x.webp" class="d-block w-100 c-img" alt="Slide 1">
+            <div class="carousel-caption">
+              <h1 class="carousel-h1">WORLD OF VALENTINO</h1>
+              <p class="carousel-p">Shop Handbags, Shoes, Apparel, Accessories & More</p>
+              <button class="btn btn-primary">SHOP VALENTINO</button>
+            </div>
+          </div>
+          <div class="carousel-item c-item">
+            <img src="asset/shutterstock_1207523875_1944x.webp" class="d-block w-100 c-img" alt="Slide 2">
+            <div class="carousel-caption">
+              <h1 class="carousel-h1">GUCCI</h1>
+              <p class="carousel-p">THIS ICONIC BRAND IS REPRESENTED WITH GREAT DESIGN & CONTEMPORARY LIFESTYLE</p>
+              <button class="btn btn-primary">SHOP GUCCI</button>
+            </div>
+          </div>
+          <div class="carousel-item c-item">
+            <img src="asset/shutterstock_2056290722_1944x.webp" class="d-block w-100 c-img" alt="Slide 3">
+            <div class="carousel-caption">
+              <h1 class="carousel-h1">BOTTEGA VENETA</h1>
+              <p class="carousel-p">UNSURPASSED CRAFTSMANSHIP & THE SIGNATURE WOVEN LEATHER</p>
+              <button class="btn btn-primary">SHOP NOW</button>
+            </div>
+          </div>
+          <div class="carousel-item c-item">
+            <img src="asset/shutterstock_1464509732_1_e307f109-5b85-417e-93c7-9420d8804949_1944x.webp" class="d-block w-100 c-img" alt="Slide 3">
+            <div class="carousel-caption">
+              <h1 class="carousel-h1">FENDI</h1>
+              <p class="carousel-p">A TOP FASHION BRAND THAT CULTIVATES THE MOST ELEVATED DESIGN OF STYLES</p>
+              <button class="btn btn-primary">SHOP NOW</button>
+            </div>
+          </div>
+          <div class="carousel-item c-item">
+            <img src="asset/shutterstock_390723769_4_7_1944x.webp" class="d-block w-100 c-img" alt="Slide 3">
+            <div class="carousel-caption">
+              <h1 class="carousel-h1">LUXE HANDBAGS</h1>
+              <p class="carousel-p">Styles from Gucci Prada, Saint Laurent, Bottega Veneta, Fendi & More</p>
+              <button class="btn btn-primary">SHOP HANDBAGS</button>
+            </div>
+          </div>
+          <div class="carousel-item c-item">
+            <img src="asset/shutterstock_442324294_1944x.webp" class="d-block w-100 c-img" alt="Slide 3">
+            <div class="carousel-caption">
+              <h1 class="carousel-h1">DESIGNER SHOES</h1>
+              <p class="carousel-p">Step Into The New Season With New Designer Shoes</p>
+              <button class="btn btn-primary">SHOP WOMEN</button>
+            </div>
+          </div>
+          <div class="carousel-item c-item">
+            <img src="asset/shutterstock_1161591199_1944x.webp" class="d-block w-100 c-img" alt="Slide 3">
+            <div class="carousel-caption">
+              <p class="carousel-p">SUNNIES FOR HIM & HER</p>
+              <h1 class="carousel-h1">ICONIC SUNGLASSES</h1>
+              <p class="carousel-p">Featuring Dior, Tom Ford, Fendi & More</p>
+              <button class="btn btn-primary">SHOP NOW</button>
+            </div>
+          </div>
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#Hero-carousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#Hero-carousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div id="pagination">
+        <div id="controlph">
+          <div id="recommended_p">RECOMMENDED PRODUCTS</div>
+          <div id="nav"></div>
+        </div>
+        
+        <div id="content"></div>
+    </div>
+
+      <div id="women_section_offer">
+        <div>
+          <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/VENDOR_ASSET_-Extra_15_Off_Select_Luxe_Staples_540x.png?v=1671459534" alt="">
+          <div class="women_text"><h4>ON TREND DRESSES</h4>
+            <h1>UP TO 85% OFF</h1>
+            <button>SHOP DRESSES</button></div>
+        </div>
+        <div>
+          <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/WEB_ASSET_2_540x.jpg?v=1650894933" alt="">
+          <div class="women_text"><h4>DESIGNER BOUTIQUE</h4>
+            <h1>UP TO 84% OFF</h1>
+            <h4>Best-Selling Styles from: Gucci,<br> Valentino, Balenciaga, Stuart Weitzman <br>& More</h4>
+            <button>SHOP DRESSES</button></div>
+          </div>
+        <div>
+          <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/womens_tops_2_540x.jpg?v=1630508297" alt="">
+          <div class="women_text"><h5>TRENDING TOPS FOR THE NEW <br> SEASON</h5>
+            <h5>Featuring Gracia, Theory, Trina Turk & More</h5>
+            <button>SHOP DRESSES</button></div>
+        </div>
+      </div>
+
+
+      <hr>
+      <div id="shop_by_category_hp">
+        <h2>SHOP BY CATEGORY</h2>
+        <div id="shop_by_category_hp_div">
+          <div><img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/1411497183_RLLZ_1_1800x1800.jpg?v=1684458224" alt="DRESSES">
+          <a href="">DRESSES</a>
+          </div>
+          <div><img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/1311521633_RLLZ_1_900x.jpg?v=1684961531" alt="PUMPS & HEELS">
+          <a href="">PUMPS & HEELS</a>
+          </div>
+          <div>
+            <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/products/447632_1800x1800.jpg?v=1676319918" alt="HANDBAGS">
+            <a href="">HANDBAGS</a>
+          </div>
+          <div>
+            <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/gg0113s-30001560-007__1_1800x1800.jpg?v=1684969616" alt="SUNGLASSES">
+            <a href="">SUNGLASSES</a>
+          </div>
+          <div>
+            <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/1313323416_RLLZ_1_1800x1800.jpg?v=1684445336" alt="WOMEN'S SNEAKERS">
+            <a href="">WOMEN'S SNEAKERS</a>
+          </div>
+          <div>
+            <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/1312451688_RLLZ_1_1800x1800.jpg?v=1685167416" alt="MEN'S SNEAKERS">
+            <a href="">MEN'S SNEAKERS</a>
+          </div>
+          <div>
+            <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1881082_1800x1800.jpg?v=1634581037" alt="MEN'S T-SHIRTS">
+            <a href="">MEN'S T-SHIRTS</a>
+          </div>
+          <div>
+            <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/products/7f12a84c-1122-443f-8528-4128d294b811_5201093d-e997-40ab-9b48-8741310190cf_1800x1800.jpg?v=1602140328" alt="WOMEN'S TOPS">
+            <a href="">WOMEN'S TOPS</a>
+          </div>
+          <div>
+            <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/BxgoHkRs1Y2OdlEJQn2cCExRl7f4aLz5-25_1800x1800.jpg?v=1685121141" alt="WOMEN'S DENIM">
+            <a href="">WOMEN'S DENIM</a>
+          </div>
+          <div>
+            <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/Woven-Leaf-Necklace-BCBGMAXAZRIA_1800x1800.jpg?v=1684533998" alt="JEWELRY">
+            <a href="">JEWELRY</a>
+          </div>
+        </div>
+      </div>
+    
+
+      <div id="Hero-carousel_2" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active c-item">
+            <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/shutterstock_1207523875_1944x.jpg?v=1660338294" class="d-block w-100 c-img" alt="Slide 1">
+            <div class="carousel-caption">
+              <h1 class="carousel-h1">GUCCI <br> UP TO 70% OFF</h1>
+              <p class="carousel-p">THIS ICONIC BRAND IS REPRESENTED WITH GREAT DESIGN & CONTEMPORARY LIFESTYLE</p>
+              <button class="btn btn-primary">SHOP VALENTINO</button>
+            </div>
+          </div>
+          <div class="carousel-item c-item">
+            <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/shutterstock_2056290722_1944x.jpg?v=1660337209" class="d-block w-100 c-img" class="d-block w-100" alt="Slide 2">
+            <div class="carousel-caption">
+              <h1 class="carousel-h1">BOTTEGA VENETA <br> UP TO 65% OFF</h1>
+              <p class="carousel-p">UNSURPASSED CRAFTSMANSHIP & THE SIGNATURE WOVEN LEATHER</p>
+              <button class="btn btn-primary">SHOP NOW</button>
+            </div>
+          </div>
+          <div class="carousel-item c-item">
+            <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/shutterstock_1464509732_1_1944x.jpg?v=1660342703" class="d-block w-100 c-img" alt="Slide 3">
+            <div class="carousel-caption">
+              <h1 class="carousel-h1">FENDI <br> UP TO 80% OFF</h1>
+              <p class="carousel-p">A TOP FASHION BRAND THAT CULTIVATES THE MOST ELEVATED DESIGN OF STYLES</p>
+              <button class="btn btn-primary">SHOP NOW</button>
+            </div>
+          </div>
+          <div class="carousel-item c-item">
+            <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/shutterstock_324325775_1_1944x.jpg?v=1660337720" class="d-block w-100 c-img" alt="Slide 4">
+            <div class="carousel-caption">
+              <h1 class="carousel-h1">PRADA <br> UP TO 75% OFF</h1>
+              <p class="carousel-p">AN ITALIAN FASHION HOUSE MADE WITH CLASSIC & ECCENTRIC STYLE</p>
+              <button class="btn btn-primary">SHOP NOW</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <hr>
+      <div id="god_father">
+        <h2>NEW ARRIVALS</h2>
+        <a href="">VIEW ALL</a>
+        <div id="new_arrival_parent">
+        </div>
+      </div>
+      <div id="god_father_2">
+        <h2>TRENDING NOW</h2>
+        <a href="">VIEW ALL</a>
+        <div id="trending_now_parent">
+        </div>
+      </div>
+      
+
+
+      
+
+      <div id="women_section_offer_2">
+        <div>
+          <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/Tops_360x.jpg?v=1615206654" alt="">
+          <div class="women_text"><h3>UP TO 90% OFF WOMEN'S MUST- <br> HAVE ACCESSORIES</h3>
+            <p>Shop Wallets, Belts, Hats, Sunglasses & More</p>
+            <button>SHOP WOMEN'S ACCESSORIES</button></div>
+        </div>
+        <div>
+          <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/denim_540x.jpg?v=1615204984" alt="">
+          <div class="women_text"><h3>UP TO 85% OFF THE DENIM SHOP <br> FOR HIM & HER</h3>
+            <p>From Hudson Jeans, Joe's Jeans, J Brand & More</p>
+            <button>SHOP DENIM</button></div>
+          </div>
+        <div>
+          <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/shutterstock_1112754335-REV_360x.jpg?v=1656342184" alt="">
+          <div class="women_text"><h3>UP TO 90% OFF TRENDING JUMPSUITS & ROMPERS</h3>
+            <p>Must-Haves From Halston, BCBGMAXAZRIA, Iro & More</p>
+            <button>SHOP JUMPSUITS</button></div>
+        </div>
+      </div>
+      
+
+
+      <script>
+        let  items_r=[
+        {  brand_name:"MOSCHINO",
+        productType:"HAND BAG",
+         name:"MOSCHINO WOMENS QUILTED LOGO BELT BAG",
+        image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/files/7701-8201-2555__00002__1_1800x1800.jpg?v=1685132390",
+        image_url1:"https://cdn.shopify.com/s/files/1/0248/3473/6191/files/7701-8201-2555__00002__2_1800x1800.jpg?v=1685132392",
+        image_url2:"https://cdn.shopify.com/s/files/1/0248/3473/6191/files/7701-8201-2555__00002__4_1800x1800.jpg?v=1685132395",
+        strikedoffprice: "590",
+        price: "329",
+        save: "Save 44%",
+          extrasave : "Extra 15% OFF"
+    },
+    {  brand_name:"GIANVITO ROSSI",
+       productType:"WOMEN SHOES",
+         name:"GIANVITO ROSSI CRUZ & LEATHER SANDAL",
+        image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/files/1313646009_RLLZ_1_1800x1800.jpg?v=1685132306",
+        image_url1:"https://cdn.shopify.com/s/files/1/0248/3473/6191/files/1313646009_RLLZ_2_1800x1800.jpg?v=1685132307",
+        image_url2:"https://cdn.shopify.com/s/files/1/0248/3473/6191/files/1313646009_RLLZ_3_1800x1800.jpg?v=1685132308",
+        strikedoffprice: "795",
+        price: "689",
+        save: "Save 13%",
+          extrasave : "Extra 15% OFF"
+    },
+    {  brand_name:"ET OCHS",
+       productType:"WOMEN DRESS",
+         name:"ET OCHS LEONARDO TANK JUMPSUIT",
+        image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/files/1050201672_RLLZ_1_1800x1800.jpg?v=1685130685",
+        image_url1:"https://cdn.shopify.com/s/files/1/0248/3473/6191/files/1050201672_RLLZ_2_1800x1800.jpg?v=1685130687",
+        image_url2:"https://cdn.shopify.com/s/files/1/0248/3473/6191/files/alc_women_apparel0422_73ea4e5d-3495-4d93-bcb4-a12adc1881aa_1800x1800.png?v=1685130688",
+        strikedoffprice: "1,395",
+        price: "804",
+        save: "Save 42%",
+          extrasave : "Extra 15% OFF"
+    },
+    {  brand_name:"GUCCI",
+       productType:"SUNGLASSES",
+         name:"GUCCI WOMEN'S SUNGLASSES",
+        image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/files/1111655370_RLLZ_1_1800x1800.jpg?v=1685130535",
+        image_url1:"https://cdn.shopify.com/s/files/1/0248/3473/6191/files/1111655370_RLLZ_2_1800x1800.jpg?v=1685130536",
+        image_url2:"https://cdn.shopify.com/s/files/1/0248/3473/6191/files/1111655370_RLLZ_1_1800x1800.jpg?v=1685130535",
+        strikedoffprice: "780",
+        price: "298",
+        save: "Save 62%",
+          extrasave : "Extra 15% OFF"
+    },
+    {  brand_name:"GIANVITO ROSSI",
+       productType:"WOMEN SHOES",
+         name:"GIANVITO ROSSI COSMIC & PATENT SANDAL",
+        image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/files/1313646006_RLLZ_1_1800x1800.jpg?v=1685132272",
+        image_url1:"https://cdn.shopify.com/s/files/1/0248/3473/6191/files/1313646006_RLLZ_2_1800x1800.jpg?v=1685132273",
+        image_url2:"https://cdn.shopify.com/s/files/1/0248/3473/6191/files/1313646006_RLLZ_3_1800x1800.jpg?v=1685132275",
+        strikedoffprice: "895",
+        price: "769",
+        save: "Save 14%",
+          extrasave : "Extra 15% OFF"
+    },{
+        brand_name:"GUCCI",
+       productType:"MEN SHOES",
+         name:"GUCCI HORSEBIT LEATHER LOAFER",
+        image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/files/1313533244_RLLZ_1_1800x1800.jpg?v=1685238268",
+        image_url1:"https://cdn.shopify.com/s/files/1/0248/3473/6191/files/1313533244_RLLZ_2_1800x1800.jpg?v=1685238269",
+        image_url2:"https://cdn.shopify.com/s/files/1/0248/3473/6191/files/1313533244_RLLZ_3_1800x1800.jpg?v=1685238270",
+        strikedoffprice: "1,001",
+        price: "595",
+        save: "save 41%",
+          extrasave : "Extra 15% OFF"
+      },
+      {  brand_name:"SAINT LAURENT",
+       productType:"MEN SHOES",
+         name:"SAINT LAURENT DURAN LEATHER LOAFER",
+        image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/files/1312489119_RLLZ_1_b84744a9-c81f-4574-b36c-37211342cc74_1800x1800.jpg?v=1685226150",
+        image_url1:"https://cdn.shopify.com/s/files/1/0248/3473/6191/files/1312489119_RLLZ_2_1800x1800.jpg?v=1685226151",
+        image_url2:"https://cdn.shopify.com/s/files/1/0248/3473/6191/files/1312489119_RLLZ_3_1800x1800.jpg?v=1685226152",
+        strikedoffprice: "1,508",
+        price: "956",
+        save: "save 37%",
+          extrasave : "Extra 15% OFF"
+    },
+    {  brand_name:"OFF WHITE",
+       productType:"BAG",
+         name:"OFF-WHITE™ DAY OFF CANVAS TOTE",
+        image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/files/1161514305_RLLZ_1_1800x1800.jpg?v=1685165589",
+        image_url1:"https://cdn.shopify.com/s/files/1/0248/3473/6191/files/1161514305_RLLZ_2_1800x1800.jpg?v=1685165590",
+        image_url2:"https://cdn.shopify.com/s/files/1/0248/3473/6191/files/1161514305_RLLZ_3_1800x1800.jpg?v=1685165592",
+        strikedoffprice: "1,280",
+        price: "1,172",
+        save: "save 8%",
+          extrasave : "Extra 15% OFF"
+    },
+    {  brand_name:"RENE CAOVILLA",
+       productType:"SANDALS",
+         name:"RENÉ CAOVILLA CLEO SATIN SANDAL",
+        image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/files/1313495941_RLLZ_1_1800x1800.jpg?v=1685143894",
+        image_url1:"https://cdn.shopify.com/s/files/1/0248/3473/6191/files/1313495941_RLLZ_2_1800x1800.jpg?v=1685143895",
+        image_url2:"https://cdn.shopify.com/s/files/1/0248/3473/6191/files/1313495941_RLLZ_3_1800x1800.jpg?v=1685143896",
+        strikedoffprice: "950",
+        price: "528",
+        save: "save 44%",
+          extrasave : "Extra 15% OFF"
+    },
+    {  brand_name:"AQUAZZURA",
+       productType:"SANDALS",
+         name:"AQUAZZURA BOW TIE VELVET SLINGBACK FLAT",
+        image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/files/1313495929_RLLZ_1_1800x1800.jpg?v=1685255331",
+        image_url1:"https://cdn.shopify.com/s/files/1/0248/3473/6191/files/1313495929_RLLZ_2_1800x1800.jpg?v=1685255333",
+        image_url2:"https://cdn.shopify.com/s/files/1/0248/3473/6191/files/1313495929_RLLZ_3_1800x1800.jpg?v=1685255334",
+        strikedoffprice: "627",
+        price: "491",
+        save: "save 22%",
+          extrasave : "Extra 15% OFF"
+    },
+    
+    //reals
+    {  brand_name:"GUCCI",
+        productType:"SLIDER",
+         name:"GUCCI WOMENS LOGO PRINT SLIDES",
+        image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/files/519996-9qr10-1085__00580__1_1800x1800.jpg?v=1685256104",
+        image_url1:"https://cdn.shopify.com/s/files/1/0248/3473/6191/files/519996-9qr10-1085__00580__2_1800x1800.jpg?v=1685256106",
+        image_url2:"https://cdn.shopify.com/s/files/1/0248/3473/6191/files/519996-9qr10-1085__00580__3_1800x1800.jpg?v=1685256107",
+        strikedoffprice: "399",
+        price: "259",
+        save: "save 30%",
+          extrasave : "Extra 15% OFF"
+    },
+    {  brand_name:"GUCCI",
+       productType:"WOMENS SHOES",
+         name:"GUCCI HORSEBIT LEATHER LOAFER",
+        image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/files/1313823158_RLLZ_1_1800x1800.jpg?v=1683913401",
+        image_url1:"https://cdn.shopify.com/s/files/1/0248/3473/6191/files/1313823158_RLLZ_2_1800x1800.jpg?v=1683913402",
+        image_url2:"https://cdn.shopify.com/s/files/1/0248/3473/6191/files/1313823158_RLLZ_3_1800x1800.jpg?v=1683913404",
+        strikedoffprice: "100",
+        price: "69",
+        save: "save 36%",
+          extrasave : "Extra 15% OFF"
+    },
+    {  brand_name:"ODSY",
+       productType:"MENS SHOES",
+         name:"OFF-WHITE MENS ODSY 1000 TRAINER SNEAKERS",
+        image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/files/ia139s22-fab00-16132__1_1800x1800.jpg?v=1685027473",
+        image_url1:"https://cdn.shopify.com/s/files/1/0248/3473/6191/files/IA139S22-FAB00-16132__20572__3_1800x1800.jpg?v=1685027481",
+        image_url2:"https://cdn.shopify.com/s/files/1/0248/3473/6191/files/IA139S22-FAB00-16132__20572__4_1800x1800.jpg?v=1685027483",
+        strikedoffprice: "849",
+        price: "449",
+        save: "save 47%",
+          extrasave : "Extra 15% OFF"
+    },
+    {  brand_name:"FENDI",
+       productType:"MENS SHOES",
+         name:"FENDI DOMINO FF CANVAS SNEAKER",
+        image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/files/1312550989_RLLZ_1_1800x1800.jpg?v=1685190645",
+        image_url1:"https://cdn.shopify.com/s/files/1/0248/3473/6191/files/1312550989_RLLZ_2_1800x1800.jpg?v=1685190647",
+        image_url2:"https://cdn.shopify.com/s/files/1/0248/3473/6191/files/1312550989_RLLZ_3_1800x1800.jpg?v=1685190648",
+        strikedoffprice: "379",
+        price: "316",
+        save: "save 17%",
+          extrasave : "Extra 15% OFF"
+    },
+    {  brand_name:"ANTONIO MAURIZI",
+       productType:"MENS SHOES",
+         name:"ANTONIO MAURIZI DOUBLE MONK LOAFER",
+        image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/files/1312335387_RLLZ_1_1800x1800.jpg?v=1685023840",
+        image_url1:"https://cdn.shopify.com/s/files/1/0248/3473/6191/files/1312335387_RLLZ_2_1800x1800.jpg?v=1685023842",
+        image_url2:"https://cdn.shopify.com/s/files/1/0248/3473/6191/files/1312335387_RLLZ_3_1800x1800.jpg?v=1685023843",
+        strikedoffprice: "450",
+        price: "309",
+        save: "save 31%",
+          extrasave : "Extra 15% OFF"
+    },
+    
+      ];
+        // trial
+        var  new_arrival=[
+        {  brand_name:"MOSCHINO",
+        productType:"HAND BAG",
+         name:"MOSCHINO WOMENS QUILTED LOGO BELT BAG",
+        image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/files/7701-8201-2555__00002__1_1800x1800.jpg?v=1685132390",
+        image_url1:"https://cdn.shopify.com/s/files/1/0248/3473/6191/files/7701-8201-2555__00002__2_1800x1800.jpg?v=1685132392",
+        image_url2:"https://cdn.shopify.com/s/files/1/0248/3473/6191/files/7701-8201-2555__00002__4_1800x1800.jpg?v=1685132395",
+        strikedoffprice: "590",
+        price: "329",
+        save: "Save 44%",
+          extrasave : "Extra 15% OFF"
+    },
+    {  brand_name:"GIANVITO ROSSI",
+       productType:"WOMEN SHOES",
+         name:"GIANVITO ROSSI CRUZ 60 SUEDE & LEATHER SANDAL",
+        image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/files/1313646009_RLLZ_1_1800x1800.jpg?v=1685132306",
+        image_url1:"https://cdn.shopify.com/s/files/1/0248/3473/6191/files/1313646009_RLLZ_2_1800x1800.jpg?v=1685132307",
+        image_url2:"https://cdn.shopify.com/s/files/1/0248/3473/6191/files/1313646009_RLLZ_3_1800x1800.jpg?v=1685132308",
+        strikedoffprice: "795",
+        price: "689",
+        save: "Save 13%",
+          extrasave : "Extra 15% OFF"
+    },
+    {  brand_name:"ET OCHS",
+       productType:"WOMEN DRESS",
+         name:"ET OCHS LEONARDO TANK JUMPSUIT",
+        image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/files/1050201672_RLLZ_1_1800x1800.jpg?v=1685130685",
+        image_url1:"https://cdn.shopify.com/s/files/1/0248/3473/6191/files/1050201672_RLLZ_2_1800x1800.jpg?v=1685130687",
+        image_url2:"https://cdn.shopify.com/s/files/1/0248/3473/6191/files/alc_women_apparel0422_73ea4e5d-3495-4d93-bcb4-a12adc1881aa_1800x1800.png?v=1685130688",
+        strikedoffprice: "1,395",
+        price: "804",
+        save: "Save 42%",
+          extrasave : "Extra 15% OFF"
+    },
+    {  brand_name:"GUCCI",
+       productType:"SUNGLASSES",
+         name:"GUCCI WOMEN'S GG0113S 44MM SUNGLASSES",
+        image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/files/1111655370_RLLZ_1_1800x1800.jpg?v=1685130535",
+        image_url1:"https://cdn.shopify.com/s/files/1/0248/3473/6191/files/1111655370_RLLZ_2_1800x1800.jpg?v=1685130536",
+        image_url2:"https://cdn.shopify.com/s/files/1/0248/3473/6191/files/1111655370_RLLZ_1_1800x1800.jpg?v=1685130535",
+        strikedoffprice: "780",
+        price: "298",
+        save: "Save 62%",
+          extrasave : "Extra 15% OFF"
+    },
+    {  brand_name:"GIANVITO ROSSI",
+       productType:"WOMEN SHOES",
+         name:"GIANVITO ROSSI COSMIC 55 VINYL & PATENT SANDAL",
+        image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/files/1313646006_RLLZ_1_1800x1800.jpg?v=1685132272",
+        image_url1:"https://cdn.shopify.com/s/files/1/0248/3473/6191/files/1313646006_RLLZ_2_1800x1800.jpg?v=1685132273",
+        image_url2:"https://cdn.shopify.com/s/files/1/0248/3473/6191/files/1313646006_RLLZ_3_1800x1800.jpg?v=1685132275",
+        strikedoffprice: "895",
+        price: "769",
+        save: "Save 14%",
+          extrasave : "Extra 15% OFF"
+    },
+    
+      ];
+
+      var trending_now=[{
+        brand_name:"PRADA",
+       productType:"WOMEN SHOES",
+         name:"PRADA SNEAKERS WOMEN FABRIC BLACK",
+        image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1068397_c235d24a-5e25-4968-9b9a-705bed9631b1_1800x1800.jpg?v=1681072647",
+        image_url1:"https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1068397_c235d24a-5e25-4968-9b9a-705bed9631b1_1800x1800.jpg?v=1681072647",
+        image_url2:"https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1068397_c235d24a-5e25-4968-9b9a-705bed9631b1_1800x1800.jpg?v=1681072647",
+        strikedoffprice: "1,001",
+        price: "595",
+        save: "save 41%",
+          extrasave : "Extra 15% OFF"
+      },
+      {  brand_name:"FRAME",
+       productType:"DRESS",
+         name:"KAFTAN WOMENS SPLIT NECK LONG MAXI DRESS",
+        image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/files/qsBEViXrvP0PTuHYFBV0VzGLEGeQoXo7-25_1800x1800.jpg?v=1685462966",
+        image_url1:"https://cdn.shopify.com/s/files/1/0248/3473/6191/files/SzW1Ki9EdkmIzBCNoO1I3lGPMxTAyMA3-25_1800x1800.jpg?v=1685462968",
+        image_url2:"https://cdn.shopify.com/s/files/1/0248/3473/6191/files/qsBEViXrvP0PTuHYFBV0VzGLEGeQoXo7-25_1800x1800.jpg?v=1685462966",
+        strikedoffprice: "1,508",
+        price: "956",
+        save: "save 37%",
+          extrasave : "Extra 15% OFF"
+    },
+    {  brand_name:"MARCHESA NOTTE",
+       productType:"DRESS",
+         name:"MARCHESA NOTTE MIDI DRESS",
+        image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/files/1452552971_RLLZ_1_1800x1800.jpg?v=1685456876",
+        image_url1:"https://cdn.shopify.com/s/files/1/0248/3473/6191/files/1452552971_RLLZ_2_1800x1800.jpg?v=1685456877",
+        image_url2:"https://cdn.shopify.com/s/files/1/0248/3473/6191/files/1452552971_RLLZ_3_1800x1800.jpg?v=1685456879",
+        strikedoffprice: "665",
+        price: "432",
+        save: "save 35%",
+          extrasave : "Extra 15% OFF"
+    },
+    {  brand_name:"VALENTINO",
+       productType:"SANDALS",
+         name:"VALENTINO GARAVANI LEATHER SANDALS",
+        image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/files/2232944_1800x1800.jpg?v=1682413203",
+        image_url1:"https://cdn.shopify.com/s/files/1/0248/3473/6191/files/2232944_1800x1800.jpg?v=1682413203",
+        image_url2:"https://cdn.shopify.com/s/files/1/0248/3473/6191/files/2232944_1800x1800.jpg?v=1682413203",
+        strikedoffprice: "950",
+        price: "528",
+        save: "save 44%",
+          extrasave : "Extra 15% OFF"
+    },
+    {  brand_name:"DOLCE & GABBANA",
+       productType:"SNEAKERS",
+         name:"PORTOFINO LEATHER SNEAKERS",
+        image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/products/924565_1800x1800.jpg?v=1679542071",
+        image_url1:"https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1702647_1800x1800.jpg?v=1679542090",
+        image_url2:"https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1549720_1800x1800.jpg?v=1679542093",
+        strikedoffprice: "627",
+        price: "491",
+        save: "save 22%",
+          extrasave : "Extra 15% OFF"
+    },
+    ]
+      
+
+    const nav=document.getElementById('nav');
+    const content=document.getElementById('content');
+
+    let pageIndex=0;
+    let itemsPerPage=5;
+
+    loadItems();
+    function loadItems(){
+      content.innerHTML="";
+      for(let i=pageIndex*itemsPerPage;i<(pageIndex*itemsPerPage)+itemsPerPage;i++){
+        if(!items_r[i]){break}
+        const item=document.createElement('div');
+        item.innerHTML=`
+          <div>
+            <img src="${items_r[i].image_url}">
+          </div>
+          <div>
+            <span>${items_r[i].name}</span>
+          </div>
+        `;
+
+        content.append(item);
+      }
+      loadPageNav();
+    }
+
+    function loadPageNav(){
+        nav.innerHTML="";
+
+    //prev btn
+    const previousBtn=document.createElement('span');
+    previousBtn.innerHTML='<';
+    previousBtn.addEventListener('click',()=>{
+      pageIndex=(pageIndex-1+Math.ceil(items_r.length/itemsPerPage))%Math.ceil(items_r.length/itemsPerPage);
+      loadItems();
+    })
+    nav.append(previousBtn);
+
+    //next btn
+    const nextBtn=document.createElement('span');
+    nextBtn.innerHTML='>';
+    nextBtn.addEventListener('click',()=>{
+        pageIndex=(pageIndex+1)%Math.ceil(items_r.length/itemsPerPage);
+        loadItems();
+    });
+    nav.append(nextBtn);
+  }
+  
+
+
+    displayNew_arrival();
+
+    displayTrending_now();
+
+    function displayNew_arrival(){
+      new_arrival.map(function(elm){
+        var div=document.createElement("div");
+        var img=document.createElement("img");
+        img.setAttribute("src",elm.image_url);
+        img.setAttribute("alt",elm.productType);
+        img.addEventListener("click",function(){  //Abhishek Added part is starting
+            console.log(event.target.parentNode);
+      var imgs=event.target.parentNode.children[0].getAttribute("src");
+     var discount= event.target.parentNode.children[2].children[2].innerText;
+      var discription=event.target.parentNode.children[1].innerText;
+      var rprice=event.target.parentNode.children[2].children[0].innerText;
+      console.log(rprice);
+      var price=event.target.parentNode.children[2].children[1].innerText;
+     var saving= event.target.parentNode.children[2].children[2].innerText;
+     var brand=event.target.parentNode.children[3].children[0].innerText;
+    // console.log(brand);
+     var type=event.target.parentNode.children[3].children[1].innerText;
+     var img2=event.target.parentNode.children[3].children[2].getAttribute("src");
+     var img3=event.target.parentNode.children[3].children[3].getAttribute("src");
+    // console.log();
+      var obj={};
+      obj["imgs"]=imgs;
+      obj["discount"]=discount;
+      obj["discription"]=discription;
+      obj["rprice"]=rprice;
+      obj["price"]=price;
+      obj["saving"]=saving;
+      obj["brand"]=brand;
+      obj["type"]=type;
+      obj["img2"]=img2;
+      obj["img3"]=img3;
+      localStorage.setItem("product-pge-item",JSON.stringify(obj));
+       window.location.href="product_page.html";
+
+       console.log();  
+
+
+    });
+        var p=document.createElement("p");
+        p.textContent=elm.name;
+        p.addEventListener("click",function(){  //Abhishek Added part is starting
+            var imgs=event.target.parentNode.children[0].getAttribute("src");
+     var discount= event.target.parentNode.children[2].children[2].innerText;
+      var discription=event.target.parentNode.children[1].innerText;
+      var rprice=event.target.parentNode.children[2].children[0].innerText;
+      console.log(rprice);
+      var price=event.target.parentNode.children[2].children[1].innerText;
+     var saving= event.target.parentNode.children[2].children[2].innerText;
+     var brand=event.target.parentNode.children[3].children[0].innerText;
+    // console.log(brand);
+     var type=event.target.parentNode.children[3].children[1].innerText;
+     var img2=event.target.parentNode.children[3].children[2].getAttribute("src");
+     var img3=event.target.parentNode.children[3].children[3].getAttribute("src");
+    // console.log();
+      var obj={};
+      obj["imgs"]=imgs;
+      obj["discount"]=discount;
+      obj["discription"]=discription;
+      obj["rprice"]=rprice;
+      obj["price"]=price;
+      obj["saving"]=saving;
+      obj["brand"]=brand;
+      obj["type"]=type;
+      obj["img2"]=img2;
+      obj["img3"]=img3;
+      localStorage.setItem("product-pge-item",JSON.stringify(obj));
+       window.location.href="product_page.html";
+
+       console.log(event.target.parentNode);  
+
+
+    });
+        var pDiv=document.createElement("div");
+        var originp=document.createElement("p");
+        originp.textContent="$"+elm.strikedoffprice;
+        var discountp=document.createElement("p");
+        discountp.textContent="$"+elm.price;
+        var savep=document.createElement("p");
+        savep.textContent=elm.save;
+        pDiv.append(originp,discountp,savep);
+    //mydiv
+    var mydiv=document.createElement("div");
+    mydiv.setAttribute("id","mydiv");
+    var brand=document.createElement("p");
+    brand.innerText=elm.brand_name;
+   
+    var type=document.createElement("p");
+    type.innerText=elm.productType;
+   
+    var img2=document.createElement("img");
+    img2.setAttribute("src",elm.image_url1);
+    var img3=document.createElement("img");
+    img3.setAttribute("src",elm.image_url2);
+   
+   
+    mydiv.append(brand,type,img2,img3);
+        div.append(img,p,pDiv,mydiv);
+        new_arrival_parent.append(div);
+      })
+    }
+
+    function displayTrending_now(){
+      trending_now.map(function(elm){
+        var div=document.createElement("div");
+        var img=document.createElement("img");
+        img.setAttribute("src",elm.image_url);
+        img.setAttribute("alt",elm.productType);
+        img.addEventListener("click",function(){  //Abhishek Added part is starting
+            var imgs=event.target.parentNode.children[0].getAttribute("src");
+     var discount= event.target.parentNode.children[2].children[2].innerText;
+      var discription=event.target.parentNode.children[1].innerText;
+      var rprice=event.target.parentNode.children[2].children[0].innerText;
+      console.log(rprice);
+      var price=event.target.parentNode.children[2].children[1].innerText;
+     var saving= event.target.parentNode.children[2].children[2].innerText;
+     var brand=event.target.parentNode.children[3].children[0].innerText;
+    // console.log(brand);
+     var type=event.target.parentNode.children[3].children[1].innerText;
+     var img2=event.target.parentNode.children[3].children[2].getAttribute("src");
+     var img3=event.target.parentNode.children[3].children[3].getAttribute("src");
+    // console.log();
+      var obj={};
+      obj["imgs"]=imgs;
+      obj["discount"]=discount;
+      obj["discription"]=discription;
+      obj["rprice"]=rprice;
+      obj["price"]=price;
+      obj["saving"]=saving;
+      obj["brand"]=brand;
+      obj["type"]=type;
+      obj["img2"]=img2;
+      obj["img3"]=img3;
+      localStorage.setItem("product-pge-item",JSON.stringify(obj));
+       window.location.href="product_page.html";
+
+       console.log(event.target.parentNode);  
+
+
+    });
+    console.log("hii");  
+        var p=document.createElement("p");
+        p.textContent=elm.name;
+        p.addEventListener("click",function(){  //Abhishek Added part is starting
+            var imgs=event.target.parentNode.children[0].getAttribute("src");
+     var discount= event.target.parentNode.children[2].children[2].innerText;
+      var discription=event.target.parentNode.children[1].innerText;
+      var rprice=event.target.parentNode.children[2].children[0].innerText;
+      console.log(rprice);
+      var price=event.target.parentNode.children[2].children[1].innerText;
+     var saving= event.target.parentNode.children[2].children[2].innerText;
+     var brand=event.target.parentNode.children[3].children[0].innerText;
+    // console.log(brand);
+     var type=event.target.parentNode.children[3].children[1].innerText;
+     var img2=event.target.parentNode.children[3].children[2].getAttribute("src");
+     var img3=event.target.parentNode.children[3].children[3].getAttribute("src");
+    // console.log();
+      var obj={};
+      obj["imgs"]=imgs;
+      obj["discount"]=discount;
+      obj["discription"]=discription;
+      obj["rprice"]=rprice;
+      obj["price"]=price;
+      obj["saving"]=saving;
+      obj["brand"]=brand;
+      obj["type"]=type;
+      obj["img2"]=img2;
+      obj["img3"]=img3;
+      localStorage.setItem("product-pge-item",JSON.stringify(obj));
+       window.location.href="product_page.html";
+            
+       console.log(event.target.parentNode);  
+
+
+    });
+        var pDiv=document.createElement("div");
+        var originp=document.createElement("p");
+        originp.textContent="$"+elm.strikedoffprice;
+        var discountp=document.createElement("p");
+        discountp.textContent="$"+ elm.price;
+        var savep=document.createElement("p");
+        savep.textContent=elm.save;
+        pDiv.append(originp,discountp,savep);
+        //mycode
+    var mydiv=document.createElement("div");
+    mydiv.setAttribute("id","mydiv");
+    var brand=document.createElement("p");
+    brand.innerText=elm.brand_name;
+   
+    var type=document.createElement("p");
+    type.innerText=elm.productType;
+   
+    var img2=document.createElement("img");
+    img2.setAttribute("src",elm.image_url1);
+    var img3=document.createElement("img");
+    img3.setAttribute("src",elm.image_url2);
+   
+   
+    mydiv.append(brand,type,img2,img3);
+        div.append(img,p,pDiv,mydiv);
+        trending_now_parent.append(div);
+      })
+    }
+
+   // const galleryItems=document.querySelector("recommended_gallery_item").children;
+   // console.log(galleryItems)
+      </script>
+
+      // <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+      </script>
+
+</body>
+</html>
