@@ -130,7 +130,8 @@
         a{
             text-decoration: none;
             color:#454545;
-        }  
+        } 
+       
         @media screen and (max-width: 770px) {
         
             #parent{
@@ -160,6 +161,7 @@
         <div>
             
             <form id="login">
+                
                 <label >FIRST NAME</label>
                 <input type="text" id="f_name">
                 <label >LAST NAME</label>
@@ -230,7 +232,8 @@
         var Lname=document.getElementById("l_name").value;
         var email=document.getElementById("mail").value;
         var password=document.getElementById("password").value;
-        var obj={};
+        if(Fname!="" && Lname!="" && email!="" && password!=""){
+            var obj={};
         obj["f_name"]=Fname;
         obj["l_name"]=Lname;
         obj["email"]=email;
@@ -238,6 +241,12 @@
         login_details.push(obj);
         window.location.href="details.html";
         localStorage.setItem("login-details",JSON.stringify(login_details));
+        
+        }else{
+           alert("Fill all the details");
+        }
+       
     });
+   
 </script>
 </html>
