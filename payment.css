@@ -1,3 +1,8 @@
+html{
+  scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+}
 .payment-options{
     display: block;
     border: 1px solid #ccc;
@@ -125,3 +130,4 @@ table {
   border-left: 1px solid #ccc;
   background-color: #f2f2f2;
 }
+
