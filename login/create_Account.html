@@ -230,7 +230,8 @@
         var Lname=document.getElementById("l_name").value;
         var email=document.getElementById("mail").value;
         var password=document.getElementById("password").value;
-        var obj={};
+        if(Fname!="" && Lname!="" && email!="" && password!=""){
+            var obj={};
         obj["f_name"]=Fname;
         obj["l_name"]=Lname;
         obj["email"]=email;
@@ -238,6 +239,10 @@
         login_details.push(obj);
         window.location.href="details.html";
         localStorage.setItem("login-details",JSON.stringify(login_details));
+        }else{
+            alert("Please fill all the details");
+        }
+        
     });
 </script>
 </html>
