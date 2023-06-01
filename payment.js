@@ -74,3 +74,46 @@ if (this.checked) {
 function submitForm() {
     alert("Payment completed successfully!");
   }
+
+  
+function Subtotal() {
+  var total = MensData.reduce(function (acc, currEl) {
+      var quantity = currEl.quantity || 1; 
+      return acc + currEl.price * quantity;
+  }, 0);
+
+  var subtotalContainer = document.querySelector("#subtotal");
+  subtotalContainer.innerHTML = ""; 
+
+  var p = document.createElement("h6");
+  p.textContent = "Subtotal";
+
+  var p1 = document.createElement("p");
+  p1.textContent = "$ " + total.toFixed(2); 
+
+  subtotalContainer.append(p, p1);
+}
+
+function Total() {
+  var total = calculateTotal();
+
+  var finalTotalContainer = document.querySelector("#Finaltotal");
+  finalTotalContainer.innerHTML = "";
+
+  var p = document.createElement("h6");
+  p.textContent = "Total";
+
+  var p1 = document.createElement("p");
+  p1.textContent = "$ " + total.toFixed(2); 
+
+  finalTotalContainer.append(p, p1);
+}
+
+function calculateTotal() {
+  var total = MensData.reduce(function (acc, currEl) {
+      var quantity = currEl.quantity || 1; 
+      return acc + currEl.price * quantity;
+  }, 0);
+
+  return total;
+}

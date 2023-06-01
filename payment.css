@@ -31,6 +31,7 @@ html{
    border-radius: 6px;
    border: 1px solid #ccc;
  }
+
 #creditCard{
      margin-bottom: 12px;
 }
@@ -99,7 +100,7 @@ color: darkslategray;
 }
 .form{
    width: 99%;
-   height: 40px;
+   height: 45px;
    margin-bottom: 10px;
    border-radius: 6px;
    border: 1px solid #ccc;
@@ -130,4 +131,14 @@ table {
   border-left: 1px solid #ccc;
   background-color: #f2f2f2;
 }
-
+.hr{
+  width: 100%;
+  border-top: 1px solid #ccc;
+}
+.input{
+  width: 98%;
+  height: 40px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}

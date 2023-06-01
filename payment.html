@@ -2,13 +2,8 @@
 <html>
 <head>
   <title>Payment Page</title>
-  <style>
-    /* Add your custom styles here */
-      /* style in differen file */
-  </style>
-  <script>
-    /* script in different file */
-  </script>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="payment.css">
   <script src="payment.js"></script>
 </head>
@@ -22,7 +17,8 @@
     <p>All transactions are secure and encrypted.</p>
 
     <div class="payment-options" >
-      <input type="radio"  id="creditCard" name="paymentMethod" value="creditCard" onclick="handlePaymentOption()">Credit card
+      <input type="radio"  id="creditCard" name="paymentMethod" value="creditCard" onclick="handlePaymentOption()" checked>
+      <label for="checkout payment"></label>Credit card
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       <img class="size1" src="data:image/png;base64,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" alt="img">
@@ -104,19 +100,19 @@
         
         
            <div class="flex">
-            <input type="text" placeholder="First name" style="width: 98%; height: 40px; margin-bottom: 10px; border-radius: 6px;  border: 1px solid #ccc;"><br>
-            <input type="text" placeholder="Last name" style="width: 98%; height: 40px; margin-bottom: 10px; border-radius: 6px;  border: 1px solid #ccc;"><br>
-          </div>
+            <input type="text" placeholder="First name" class="input"><br>
+            <input type="text" placeholder="Last name" class="input"><br>
+           </div>
       
-            <input type="text" id="billingAddress" name="billingAddress" placeholder="Address"style="width: 98%; height: 40px; margin-bottom: 10px; border-radius: 6px;  border: 1px solid #ccc;" ><br>
+            <input type="text" id="billingAddress" name="billingAddress" placeholder="Address" class="input" ><br>
           
-           <input type="text" id="billingCity" name="billingCity" placeholder="Apartment,suit,etc.(optional)" style="width: 98%; height: 40px; margin-bottom: 10px; border-radius: 6px;  border: 1px solid #ccc;"><br>
+           <input type="text" id="billingCity" name="billingCity" placeholder="Apartment,suit,etc.(optional)" class="input"><br>
           <div class="flex">
-             <input type="text" name="billingCity" placeholder="City" style="width: 98%; height: 40px; margin-bottom: 10px; border-radius: 6px;  border: 1px solid #ccc;"><br>
-             <input type="text" id="billingState" name="billingState" placeholder="State" style="width: 98%; height: 40px; margin-bottom: 10px; border-radius: 6px;  border: 1px solid #ccc;"><br>
-             <input type="text" id="billingZip" name="billingZip" placeholder="ZIP code"style="width: 98%; height: 40px; margin-bottom: 10px; border-radius: 6px;  border: 1px solid #ccc;" ><br>
+             <input type="text" name="billingCity" placeholder="City" class="input"><br>
+             <input type="text" id="billingState" name="billingState" placeholder="State" class="input"><br>
+             <input type="text" id="billingZip" name="billingZip" placeholder="ZIP code" class="input" ><br>
          </div>
-          <input type="number" placeholder="Phone"style="width: 98%; height: 40px; margin-bottom: 10px; border-radius: 6px;  border: 1px solid #ccc;" >
+          <input type="number" placeholder="Phone" class="input" >
       
         </div>
         </div>
@@ -149,30 +145,26 @@
   <div class="right-column">
    <table>
     <tr>
-      <td><input type="text" placeholder="Gift card or discount rate code" style="width: 85%; height: 40px; margin-bottom: 10px; border-radius: 6px;  border: 1px solid #ccc; "></td>
-      <td><button class="button2" >Apply</button></td>
-    </tr>
-    <tr>
-      <td colspan="2"><hr style="border-top: 1px solid #ccc; width: 100%;"></td>
+      <td colspan="2"><hr class="hr" ></td>
     </tr>
     <tr>
       <td>Subtotal</td>
-      <td>$.....</td>
+      <td id="subtotal"></td>
    </tr>
-   <tr>
+   <!-- <tr>
     <td>Discount  EXTRA 15% OFF MEMORIAL DAY SITEWIDE SALE</td>
     <td>$00....</td>
-   </tr>
+   </tr> -->
     <tr>
       <td>Shipping</td>
       <td>Free</td>
     </tr>
     <tr>
-      <td colspan="2"><hr style="border-top: 1px solid #ccc; width: 100%;"></td>
+      <td colspan="2"><hr class="hr"></td>
     </tr>
     <tr>
       <td>Total</td>
-      <td> USD $.....</td>
+      <td id="Finaltotal"> </td>
     </tr>
    </table>
   
