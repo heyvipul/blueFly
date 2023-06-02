@@ -1059,3 +1059,54 @@ body>#offerLine>img{
     
 } */
 /*  */
+/* footercss */
+footer{
+    margin-top: 80px;
+}
+.footer_container{
+   display: flex;
+   gap: 150px;
+   padding: 30px;
+}
+footer{
+   background-color:rgb(230,230,230);
+}
+.footer_container p{
+   font-size: 17px;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.footer_container h3{
+   font-size: 21px;
+   font-family:monospace;
+}
+
+.bottom_footer{
+   text-align: center;
+   padding: 30px;
+}
+.bottom_footer img{
+   width: 270px;
+   text-align: center;
+   /* padding-top: -20px; */
+   margin-top: -20px;
+}
+.bottom_footer p{
+   font-size: 14px;
+   padding-bottom: 20px;
+}
+.insta{
+   display: flex;
+   gap: 20px;
+   margin-top: -20px; 
+}
+.insta > p > a{
+   font-size: 30px;
+}
+
+.footer_container a:hover{
+   color: peru;
+}
+.footer_container a{
+   text-decoration: none;
+   color:#454545;
+}
