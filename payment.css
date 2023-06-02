@@ -1,0 +1,178 @@
+html{
+  scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+}
+.payment-options{
+    display: block;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 0px;
+    width: 50%;
+ }
+
+ .payment-options::after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+  .card-details,
+  .shop-pay-message,
+  .paypal-message {
+    display: none;
+  }
+.card-details.large{
+   display: block;
+}
+.card-details.large input {
+   width: 98%;
+   height: 40px;
+   margin-bottom: 10px;
+   border-radius: 6px;
+   border: 1px solid #ccc;
+ }
+
+#creditCard{
+     margin-bottom: 12px;
+}
+  .flex{
+    display: flex;
+    gap: 4px;
+  }
+  .flex2{
+    display: flex;
+     gap: 410px;
+  }
+  .size{
+      height: 24px;
+     }
+.size1{
+  height: 32px;
+}
+    table {
+    width: 100%;
+  }
+  table td {
+    padding: 10px;
+  }
+  .button1{
+    background-color: black;
+    color: aliceblue;
+    height: 60px;
+    width: 80px;
+    border-radius: 5px;
+  }
+  .button2{
+    background-color: black;
+    color: aliceblue;
+    height: 40px;
+    width: 80px;
+    border-radius: 5px;
+  }
+  .back-link {
+    margin-top: 10px;
+    cursor: pointer;
+  }
+
+ .p{
+  font-size: 14px;
+ }
+ h2{
+  margin-bottom: -10px;
+ }
+ .margin{
+  margin-left: 8%;
+  margin-top: 4%;
+ }
+
+ .shop-pay-message,
+ .paypal-message{
+  text-align: center;
+ }
+.gap{
+margin-bottom: -12px;
+}
+#checkoutMessage {
+display: none;
+}
+h2{
+color: darkslategray;
+}
+.form{
+   width: 99%;
+   height: 45px;
+   margin-bottom: 10px;
+   border-radius: 6px;
+   border: 1px solid #ccc;
+}
+hr{
+width: 52%;
+margin-inline-start: 0;
+opacity: 0.5; 
+}
+
+table {
+  border-collapse: initial;
+  border-spacing: -20px; 
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.left-column {
+  flex: 1 0 80%;
+}
+
+.right-column {
+  flex: 1 0 20%;
+  margin-left: -500px;
+  border-left: 1px solid #ccc;
+  background-color: #f2f2f2;
+}
+.hr{
+  width: 100%;
+  border-top: 1px solid #ccc;
+}
+.input{
+  width: 98%;
+  height: 40px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* media queries! */
+
+@media only screen and (max-width: 768px) {
+  /* Styles for screens up to 768px */
+  .payment-options {
+    width: 100%;
+  }
+
+  .right-column {
+    display: none;
+  }
+
+  .left-column {
+    flex: 1 0 100%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /* Styles for screens up to 480px */
+  .flex2 {
+    display: block;
+  }
+
+  .flex2 > div {
+    width: 100%;
+  }
+}
+
+
+
+
+
+

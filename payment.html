@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Payment Page</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="payment.css">
+  <script src="payment.js"></script>
+</head>
+<body>
+<div class="container">
+  <div class="left-column">
+  <div class="margin">
+  <form>
+    <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/BLUEFLY-LOGO-11-20.png?v=1613183141" alt="img">
+    <h2>Payment</h2>
+    <p>All transactions are secure and encrypted.</p>
+
+    <div class="payment-options" >
+      <input type="radio"  id="creditCard" name="paymentMethod" value="creditCard" onclick="handlePaymentOption()" checked>
+      <label for="checkout payment"></label>Credit card
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <img class="size1" src="data:image/png;base64,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" alt="img">
+      <img class="size1"src="data:image/png;base64,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" alt="img">
+      <img class="size1"src="data:image/png;base64,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" alt="img">
+      <img class="size1"src="data:image/png;base64,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" alt="img">
+      <div class="card-details" id="cardDetailsForm">
+
+        <input type="text" id="cardNumber" name="cardNumber" placeholder="Card number " required><br>
+  
+        <input type="text" id="nameOnCard" name="nameOnCard" placeholder="Name on card" required><br>
+        <div class="flex">
+          
+        <input type="text" id="expirationDate" name="expirationDate" placeholder="Expiration date(MM/YY)" required><br>
+  
+        <input type="text" id="securityCode" name="securityCode" placeholder="Security code" required><br>
+       </div>
+  
+      </div>
+    </div>
+
+     <div class="payment-options" >
+    <input type="radio" id="shopPay" name="paymentMethod" value="shopPay" onclick="handlePaymentOption()">
+    <img class="size" src="shopify_installments@2x-d7520ea8e57828208454f0290d5ae8e4269bda53ac0fa85f8329da8c081e7557.png" alt="img"><br>
+    <div class="shop-pay-message" id="shopPayMessage">
+      <p class="gap">After clicking "Complete order," you will be redirected to  </p>
+      <p class="gap">Shop Pay, Pay in full or in installments to complete your </p>
+      <p>purchase securely.</p>
+    </div>
+     </div>
+     <div class="payment-options" >
+    <input type="radio" id="paypal" name="paymentMethod" value="paypal" onclick="handlePaymentOption()">
+    <img class="size" src="paypal@2x-768388b0667bef1aa9a7cf02fa1cc2184c2915a90d4cdd62dde223f74f2acbfc.png" alt="img"><br>
+    <div class="paypal-message" id="paypalMessage">
+      <p class="gap">After clicking "Complete order," you will be redirected to </p>
+      <p >PayPal to complete your purchase securely.</p>
+    </div>
+  </div>
+
+  <h2>Billing address</h2>
+  <p>Select the address that matches your card or payment method.</p>
+     <div class="payment-options">
+        <input type="radio" id="sameAsShipping" name="billingAddressOption" value="sameAsShipping" onclick="handleBillingAddressOption()" checked>
+        <label for="sameAsShipping">Same as Shipping Address</label>
+        <br><br>
+      </div>
+      <div class="payment-options"> 
+        <input type="radio" id="differentAddress" name="billingAddressOption" value="differentAddress" onclick="handleBillingAddressOption()">
+        <label for="differentAddress">Use a Different Billing Address</label>
+         <br><br>
+        <div id="billingAddressForm">
+          <select class="form" >
+            <option>Country/region</option>
+            <option value="AF">Afghanistan</option>
+            <option value="AX">Aland Islands</option>
+            <option value="AL">Albania</option>
+            <option value="DZ">Algeria</option>
+            <option value="AS">American Samoa</option>
+            <option value="AD">Andorra</option>
+            <option value="AO">Angola</option>
+            <option value="AI">Anguilla</option>
+            <option value="AQ">Antarctica</option>
+            <option value="AG">Antigua and Barbuda</option>
+            <option value="AR">Argentina</option>
+            <option value="AM">Armenia</option>
+            <option value="AW">Aruba</option>
+            <option value="AU">Australia</option>
+            <option value="AT">Austria</option>
+            <option value="AZ">Azerbaijan</option>
+            <option value="BS">Bahamas</option>
+            <option value="BH">Bahrain</option>
+            <option value="BD">Bangladesh</option>
+            <option value="IND">India</option>
+            <option value="AUS">Australia</option>
+            <option value="NZ">Newzeland</option>
+            <option value="SA">South Africa</option>
+            <option value="WI">West Indies</option>
+          </select> <br>
+        
+        
+           <div class="flex">
+            <input type="text" placeholder="First name" class="input"><br>
+            <input type="text" placeholder="Last name" class="input"><br>
+           </div>
+      
+            <input type="text" id="billingAddress" name="billingAddress" placeholder="Address" class="input" ><br>
+          
+           <input type="text" id="billingCity" name="billingCity" placeholder="Apartment,suit,etc.(optional)" class="input"><br>
+          <div class="flex">
+             <input type="text" name="billingCity" placeholder="City" class="input"><br>
+             <input type="text" id="billingState" name="billingState" placeholder="State" class="input"><br>
+             <input type="text" id="billingZip" name="billingZip" placeholder="ZIP code" class="input" ><br>
+         </div>
+          <input type="number" placeholder="Phone" class="input" >
+      
+        </div>
+        </div>
+
+    <h2>Remember me</h2>
+    <br>
+    <div class="payment-options" >
+     <input type="checkbox" id="saveInfoCheckbox" value="checkout">Save my information for a faster checkout
+      
+       <p id="checkoutMessage" >Next time you check out here or on other stores powered by Shopify, you’ll receive a code by text message to securely purchase with Shop Pay.</p>
+      
+    </div>
+    <br>
+     <div class="flex2">
+      <div class="back-link" onclick="showShippingAddress()">&lt; Return to Shipping</div>
+      <button id="payNowButton" class="button1" onclick="showAlert()">Pay now</button>
+     </div>
+
+     <hr> 
+     <div class="p">
+       <a >Refund policy &nbsp;</a>
+       <a >Shipping policy &nbsp;</a>
+       <a >Privacy policy &nbsp;</a>
+       <a >Terms of service &nbsp;</a>
+     </div>
+      
+  </form>
+  </div>
+</div>
+  <div class="right-column">
+   <table>
+    <tr>
+      <td colspan="2"><hr class="hr" ></td>
+    </tr>
+    <tr>
+      <td>Subtotal</td>
+      <td id="subtotal"></td>
+   </tr>
+   <!-- <tr>
+    <td>Discount  EXTRA 15% OFF MEMORIAL DAY SITEWIDE SALE</td>
+    <td>$00....</td>
+   </tr> -->
+    <tr>
+      <td>Shipping</td>
+      <td>Free</td>
+    </tr>
+    <tr>
+      <td colspan="2"><hr class="hr"></td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td id="Finaltotal"> </td>
+    </tr>
+   </table>
+  
+  </div>
+</div>
+  
+
+
+</body>
+</html>
