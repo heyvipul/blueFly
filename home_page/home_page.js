@@ -299,6 +299,7 @@ function loadItems(){
   content.innerHTML="";
   for(let i=pageIndex*itemsPerPage;i<(pageIndex*itemsPerPage)+itemsPerPage;i++){
     if(!items_r[i]){break}
+    
     const item=document.createElement('div');
     item.innerHTML=`
       <div>
@@ -313,7 +314,116 @@ function loadItems(){
         <span>${items_r[i].save}</span>
       </div>
     `;
+    var mydiv=document.createElement("div");
+    mydiv.setAttribute("id","mydiv");
+    var brand=document.createElement("p");
+    brand.innerText=items_r[i].brand_name;
+
+    var type=document.createElement("p");
+    type.innerText=items_r[i].productType;
+
+    var img2=document.createElement("img");
+    img2.setAttribute("src",items_r[i].image_url1);
+    var img3=document.createElement("img");
+    img3.setAttribute("src",items_r[i].image_url2);
+    mydiv.append(brand,type,img2,img3);
+    item.append(mydiv);
     content.append(item);
+    console.log(content);
+    console.log(item.children[2].children[0]);
+   
+   item.children[0].children[0].addEventListener("click",function(){  //Abhishek Added part is starting
+        
+    var imgs=item.children[0].children[0].getAttribute("src");
+    var discount= "15%";
+    var discription=item.children[1].children[0].innerText;
+    var rprice="$986";
+    var price="$756";
+    var saving= "12%";
+    var brand=item.children[2].children[0].innerText;
+    // console.log(brand);
+    var type=item.children[2].children[1].innerText;
+    var img2=item.children[2].children[2].getAttribute("src");
+    var img3=item.children[2].children[3].getAttribute("src");
+    // console.log();
+      var obj={};
+      obj["imgs"]=imgs;
+      obj["discount"]=discount;
+      obj["discription"]=discription;
+      obj["rprice"]=rprice;
+      obj["price"]=price;
+      obj["saving"]=saving;
+      obj["brand"]=brand;
+      obj["type"]=type;
+      obj["img2"]=img2;
+      obj["img3"]=img3;
+      localStorage.setItem("product-pge-item",JSON.stringify(obj));
+      window.location.href="product_details.html";
+
+      console.log();  
+    });
+item.children[1].children[0].addEventListener("click",function(){  //Abhishek Added part is starting
+  var imgs=item.children[0].children[0].getAttribute("src");
+ var discount= "15%";
+ var discription=item.children[1].children[0].innerText;
+  var rprice="$986";
+  var price="$756";
+ var saving= "12%";
+ var brand=item.children[2].children[0].innerText;
+// console.log(brand);
+ var type=item.children[2].children[1].innerText;
+ var img2=item.children[2].children[2].getAttribute("src");
+ var img3=item.children[2].children[3].getAttribute("src");
+// console.log();
+  var obj={};
+  obj["imgs"]=imgs;
+  obj["discount"]=discount;
+  obj["discription"]=discription;
+  obj["rprice"]=rprice;
+  obj["price"]=price;
+  obj["saving"]=saving;
+  obj["brand"]=brand;
+  obj["type"]=type;
+  obj["img2"]=img2;
+  obj["img3"]=img3;
+  localStorage.setItem("product-pge-item",JSON.stringify(obj));
+  window.location.href="product_details.html";
+
+   console.log();  
+
+
+});
+    item.children[1].children[0].addEventListener("click",function(){  //Abhishek Added part is starting
+      var imgs=item.children[0].children[0].getAttribute("src");
+     var discount= "15%";
+     var discription=item.children[1].children[0].innerText;
+      var rprice="$986";
+      var price="$756";
+     var saving= "12%";
+     var brand=item.children[2].children[0].innerText;
+    // console.log(brand);
+     var type=item.children[2].children[1].innerText;
+     var img2=item.children[2].children[2].getAttribute("src");
+     var img3=item.children[2].children[3].getAttribute("src");
+    // console.log();
+      var obj={};
+      obj["imgs"]=imgs;
+      obj["discount"]=discount;
+      obj["discription"]=discription;
+      obj["rprice"]=rprice;
+      obj["price"]=price;
+      obj["saving"]=saving;
+      obj["brand"]=brand;
+      obj["type"]=type;
+      obj["img2"]=img2;
+      obj["img3"]=img3;
+      localStorage.setItem("product-pge-item",JSON.stringify(obj));
+      window.location.href="product_details.html";
+
+       console.log();  
+
+
+    });
   }
   loadPageNav();
 }
@@ -352,9 +462,73 @@ function displayNew_arrival(){
     var img=document.createElement("img");
     img.setAttribute("src",elm.image_url);
     img.setAttribute("alt",elm.productType);
+    img.addEventListener("click",function(){  //Abhishek Added part is starting
+    console.log(event.target.parentNode);
+    var imgs=event.target.parentNode.children[0].getAttribute("src");
+    var discount= event.target.parentNode.children[2].children[2].innerText;
+    var discription=event.target.parentNode.children[1].innerText;
+    var rprice=event.target.parentNode.children[2].children[0].innerText;
+    console.log(rprice);
+    var price=event.target.parentNode.children[2].children[1].innerText;
+    var saving= event.target.parentNode.children[2].children[2].innerText;
+    var brand=event.target.parentNode.children[3].children[0].innerText;
+    // console.log(brand);
+    var type=event.target.parentNode.children[3].children[1].innerText;
+    var img2=event.target.parentNode.children[3].children[2].getAttribute("src");
+    var img3=event.target.parentNode.children[3].children[3].getAttribute("src");
+    // console.log();
+    var obj={};
+    obj["imgs"]=imgs;
+    obj["discount"]=discount;
+    obj["discription"]=discription;
+    obj["rprice"]=rprice;
+    obj["price"]=price;
+    obj["saving"]=saving;
+    obj["brand"]=brand;
+    obj["type"]=type;
+    obj["img2"]=img2;
+    obj["img3"]=img3;
+    localStorage.setItem("product-pge-item",JSON.stringify(obj));
+    window.location.href="product_details.html";
+
+    console.log();  
+
+
+    });
     var p=document.createElement("p");
     p.textContent=elm.name;
+    p.addEventListener("click",function(){  //Abhishek Added part is starting
+      var imgs=event.target.parentNode.children[0].getAttribute("src");
+    var discount= event.target.parentNode.children[2].children[2].innerText;
+    var discription=event.target.parentNode.children[1].innerText;
+    var rprice=event.target.parentNode.children[2].children[0].innerText;
+    console.log(rprice);
+    var price=event.target.parentNode.children[2].children[1].innerText;
+    var saving= event.target.parentNode.children[2].children[2].innerText;
+    var brand=event.target.parentNode.children[3].children[0].innerText;
+    // console.log(brand);
+    var type=event.target.parentNode.children[3].children[1].innerText;
+    var img2=event.target.parentNode.children[3].children[2].getAttribute("src");
+    var img3=event.target.parentNode.children[3].children[3].getAttribute("src");
+    // console.log();
+    var obj={};
+    obj["imgs"]=imgs;
+    obj["discount"]=discount;
+    obj["discription"]=discription;
+    obj["rprice"]=rprice;
+    obj["price"]=price;
+    obj["saving"]=saving;
+    obj["brand"]=brand;
+    obj["type"]=type;
+    obj["img2"]=img2;
+    obj["img3"]=img3;
+    localStorage.setItem("product-pge-item",JSON.stringify(obj));
+    window.location.href="product_details.html";
 
+    console.log(event.target.parentNode);  
+
+
+    });
     var pDiv=document.createElement("div");
     var originp=document.createElement("p");
     originp.textContent="$"+elm.strikedoffprice;
@@ -363,20 +537,98 @@ function displayNew_arrival(){
     var savep=document.createElement("p");
     savep.textContent=elm.save;
     pDiv.append(originp,discountp,savep);
-    div.append(img,p,pDiv);
-    new_arrival_parent.append(div);
-  })
-}
+    var mydiv=document.createElement("div");
+    mydiv.setAttribute("id","mydiv");
+    var brand=document.createElement("p");
+    brand.innerText=elm.brand_name;
+   
+    var type=document.createElement("p");
+    type.innerText=elm.productType;
+   
+    var img2=document.createElement("img");
+    img2.setAttribute("src",elm.image_url1);
+    var img3=document.createElement("img");
+    img3.setAttribute("src",elm.image_url2);
+   
+   
+    mydiv.append(brand,type,img2,img3);
+        div.append(img,p,pDiv,mydiv);
+        new_arrival_parent.append(div);
+      })
+    }
 
-function displayTrending_now(){
-  trending_now.map(function(elm){
-    var div=document.createElement("div");
-    var img=document.createElement("img");
-    img.setAttribute("src",elm.image_url);
-    img.setAttribute("alt",elm.productType);
+    function displayTrending_now(){
+      trending_now.map(function(elm){
+        var div=document.createElement("div");
+        var img=document.createElement("img");
+        img.setAttribute("src",elm.image_url);
+        img.setAttribute("alt",elm.productType);
+        img.addEventListener("click",function(){  //Abhishek Added part is starting
+          var imgs=event.target.parentNode.children[0].getAttribute("src");
+    var discount= event.target.parentNode.children[2].children[2].innerText;
+    var discription=event.target.parentNode.children[1].innerText;
+    var rprice=event.target.parentNode.children[2].children[0].innerText;
+    console.log(rprice);
+    var price=event.target.parentNode.children[2].children[1].innerText;
+    var saving= event.target.parentNode.children[2].children[2].innerText;
+    var brand=event.target.parentNode.children[3].children[0].innerText;
+    // console.log(brand);
+    var type=event.target.parentNode.children[3].children[1].innerText;
+    var img2=event.target.parentNode.children[3].children[2].getAttribute("src");
+    var img3=event.target.parentNode.children[3].children[3].getAttribute("src");
+    // console.log();
+    var obj={};
+    obj["imgs"]=imgs;
+    obj["discount"]=discount;
+    obj["discription"]=discription;
+    obj["rprice"]=rprice;
+    obj["price"]=price;
+    obj["saving"]=saving;
+    obj["brand"]=brand;
+    obj["type"]=type;
+    obj["img2"]=img2;
+    obj["img3"]=img3;
+    localStorage.setItem("product-pge-item",JSON.stringify(obj));
+    window.location.href="product_details.html";
 
+    console.log(event.target.parentNode);  
+
+
+    });
     var p=document.createElement("p");
     p.textContent=elm.name;
+    p.addEventListener("click",function(){  //Abhishek Added part is starting
+    var imgs=event.target.parentNode.children[0].getAttribute("src");
+    var discount= event.target.parentNode.children[2].children[2].innerText;
+    var discription=event.target.parentNode.children[1].innerText;
+    var rprice=event.target.parentNode.children[2].children[0].innerText;
+    console.log(rprice);
+    var price=event.target.parentNode.children[2].children[1].innerText;
+    var saving= event.target.parentNode.children[2].children[2].innerText;
+    var brand=event.target.parentNode.children[3].children[0].innerText;
+    // console.log(brand);
+    var type=event.target.parentNode.children[3].children[1].innerText;
+    var img2=event.target.parentNode.children[3].children[2].getAttribute("src");
+    var img3=event.target.parentNode.children[3].children[3].getAttribute("src");
+    // console.log();
+    var obj={};
+    obj["imgs"]=imgs;
+    obj["discount"]=discount;
+    obj["discription"]=discription;
+    obj["rprice"]=rprice;
+    obj["price"]=price;
+    obj["saving"]=saving;
+    obj["brand"]=brand;
+    obj["type"]=type;
+    obj["img2"]=img2;
+    obj["img3"]=img3;
+    localStorage.setItem("product-pge-item",JSON.stringify(obj));
+    window.location.href="product_details.html";
+          
+    console.log(event.target.parentNode);  
+
+
+});
     var pDiv=document.createElement("div");
     var originp=document.createElement("p");
     originp.textContent="$"+elm.strikedoffprice;
@@ -385,10 +637,25 @@ function displayTrending_now(){
     var savep=document.createElement("p");
     savep.textContent=elm.save;
     pDiv.append(originp,discountp,savep);
-    div.append(img,p,pDiv);
-    trending_now_parent.append(div);
-  })
-}
-const galleryItems=document.querySelector("recommended_gallery_item").children;
-console.log(galleryItems)
+    var mydiv=document.createElement("div");
+    mydiv.setAttribute("id","mydiv");
+    var brand=document.createElement("p");
+    brand.innerText=elm.brand_name;
+   
+    var type=document.createElement("p");
+    type.innerText=elm.productType;
+   
+    var img2=document.createElement("img");
+    img2.setAttribute("src",elm.image_url1);
+    var img3=document.createElement("img");
+    img3.setAttribute("src",elm.image_url2);
+   
+   
+    mydiv.append(brand,type,img2,img3);
+        div.append(img,p,pDiv,mydiv);
+        trending_now_parent.append(div);
+      })
+    }
+    const galleryItems=document.querySelector("recommended_gallery_item").children;
+    console.log(galleryItems)
  
