@@ -223,121 +223,132 @@ var  mensdata=[
     
     ]; 
     
-    displayproduct();
-            
-      function displayproduct(){
-        mensdata.map(function(elem){
-            var div = document.createElement("div");
-    
-        var image = document.createElement("img");
-        image.setAttribute("src" ,elem.image_url);
-        image.setAttribute("alt" ,elem.name);
-       var extrasave = document.createElement("a");
-       extrasave.textContent = elem.extrasave;
-    
-        var name = document.createElement("h4");
-        name.textContent = elem.name;
-    var pricebox = document.createElement("div");
-    
-        var strikedoffprice = document.createElement("p");
-        strikedoffprice.textContent = "$" + elem.strikedoffprice;
-    
-        var price = document.createElement("p");
-        price.textContent = "$"+elem.price;
-        
-        var save = document.createElement("p");
-        save.textContent = elem.save;
-        pricebox.append(strikedoffprice,price,save);
-    
-        div.append(image,extrasave, name,pricebox);
-        document.getElementById("parent").append(div);
-    
-        image.addEventListener("click",function(){  // Added part 
-          var imgs=event.target.parentNode.children[0].getAttribute("src");
-         var discount= event.target.parentNode.children[1].innerText;
-          var discription=event.target.parentNode.children[2].innerText;
-          var rprice=event.target.parentNode.children[3].children[0].innerText;
-          console.log(rprice);
-          var price=event.target.parentNode.children[3].children[1].innerText;
-         var saving= event.target.parentNode.children[3].children[2].innerText;
-         var brand=event.target.parentNode.children[4].children[0].innerText;
-        // console.log(brand);
-         var type=event.target.parentNode.children[4].children[1].innerText;
-         var img2=event.target.parentNode.children[4].children[2].getAttribute("src");
-         var img3=event.target.parentNode.children[4].children[3].getAttribute("src");
-        // console.log();
-          var obj={};
-          obj["imgs"]=imgs;
-          obj["discount"]=discount;
-          obj["discription"]=discription;
-          obj["rprice"]=rprice;
-          obj["price"]=price;
-          obj["saving"]=saving;
-          obj["brand"]=brand;
-          obj["type"]=type;
-          obj["img2"]=img2;
-          obj["img3"]=img3;
-          localStorage.setItem("product-pge-item",JSON.stringify(obj));
-           window.location.href="product_page.html";
-    
-           //console.log(event.target.parentNode);  
-    
-    
-        });
-        name.addEventListener("click",function(){  //Added part is starting
-          var imgs=event.target.parentNode.children[0].getAttribute("src");
-         var discount= event.target.parentNode.children[1].innerText;
-          var discription=event.target.parentNode.children[2].innerText;
-          var rprice=event.target.parentNode.children[3].children[0].innerText;
-          console.log(rprice);
-          var price=event.target.parentNode.children[3].children[1].innerText;
-         var saving= event.target.parentNode.children[3].children[2].innerText;
-         var brand=event.target.parentNode.children[4].children[0].innerText;
-        // console.log(brand);
-         var type=event.target.parentNode.children[4].children[1].innerText;
-         var img2=event.target.parentNode.children[4].children[2].getAttribute("src");
-         var img3=event.target.parentNode.children[4].children[3].getAttribute("src");
-        // console.log();
-          var obj={};
-          obj["imgs"]=imgs;
-          obj["discount"]=discount;
-          obj["discription"]=discription;
-          obj["rprice"]=rprice;
-          obj["price"]=price;
-          obj["saving"]=saving;
-          obj["brand"]=brand;
-          obj["type"]=type;
-          obj["img2"]=img2;
-          obj["img3"]=img3;
-          localStorage.setItem("product-pge-item",JSON.stringify(obj));
-           window.location.href="product_page.html";
-    
-           //console.log(event.target.parentNode);  
-    
-    
-        });
-       
-        var mydiv=document.createElement("div");
-        mydiv.setAttribute("id","mydiv");
-        var brand=document.createElement("p");
-        brand.innerText=elem.brand_name;
-       
-        var type=document.createElement("p");
-        type.innerText=elem.productType;
-       
-        var img2=document.createElement("img");
-        img2.setAttribute("src",elem.image_url1);
-        var img3=document.createElement("img");
-        img3.setAttribute("src",elem.image_url2);
-       
-       
-        mydiv.append(brand,type,img2,img3);
-        div.append(image,extrasave, name,pricebox);
-        div.append(mydiv);
-        
-        document.getElementById("parent").append(div);
-        }) ;    
-        // till here
-    
-      }
-    
+    displayProduct(mensdata);
+
+function handlePrice() {
+var selected = document.getElementById("handlePrice").value;
+console.log(selected);
+if (selected === "htl") {
+  mensdata.sort(function(a, b) {
+    return parseFloat(b.price) - parseFloat(a.price);
+  });
+  displayProduct(mensdata);
+} else if (selected === "lth") {
+  mensdata.sort(function(a, b) {
+    return parseFloat(a.price) - parseFloat(b.price);
+  });
+  displayProduct(mensdata);
+}
+}
+
+function displayProduct(data) {
+var parentDiv = document.getElementById("parent");
+parentDiv.innerHTML = ""; // Clear previous content
+
+data.forEach(function(elem) {
+  var div = document.createElement("div");
+
+  var image = document.createElement("img");
+  image.setAttribute("src", elem.image_url);
+  image.setAttribute("alt", elem.name);
+
+  var extrasave = document.createElement("a");
+  extrasave.textContent = elem.extrasave;
+
+  var name = document.createElement("h4");
+  name.textContent = elem.name;
+
+  var pricebox = document.createElement("div");
+
+  var strikedoffprice = document.createElement("p");
+  strikedoffprice.textContent = "$" + elem.strikedoffprice;
+
+  var price = document.createElement("p");
+  price.textContent = "$" + elem.price;
+
+  var save = document.createElement("p");
+  save.textContent = elem.save;
+
+  pricebox.append(strikedoffprice, price, save);
+
+  div.append(image, extrasave, name, pricebox);
+  parentDiv.append(div);
+
+  image.addEventListener("click", function() {
+    var imgs = event.target.getAttribute("src");
+    var discount = event.target.parentNode.children[1].innerText;
+    var description = event.target.parentNode.children[2].innerText;
+    var rprice = event.target.parentNode.children[3].children[0].innerText;
+    var price = event.target.parentNode.children[3].children[1].innerText;
+    var saving = event.target.parentNode.children[3].children[2].innerText;
+    var brand = event.target.parentNode.children[4].children[0].innerText;
+    var type = event.target.parentNode.children[4].children[1].innerText;
+    var img2 = event.target.parentNode.children[4].children[2].getAttribute("src");
+    var img3 = event.target.parentNode.children[4].children[3].getAttribute("src");
+
+    var obj = {
+      imgs: imgs,
+      discount: discount,
+      description: description,
+      rprice: rprice,
+      price: price,
+      saving: saving,
+      brand: brand,
+      type: type,
+      img2: img2,
+      img3: img3
+    };
+    localStorage.setItem("product-page-item", JSON.stringify(obj));
+    window.location.href = "product_page.html";
+  });
+
+  name.addEventListener("click", function() {
+    var imgs = event.target.parentNode.children[0].getAttribute("src");
+    var discount = event.target.parentNode.children[1].innerText;
+    var description = event.target.parentNode.children[2].innerText;
+    var rprice = event.target.parentNode.children[3].children[0].innerText;
+    var price = event.target.parentNode.children[3].children[1].innerText;
+    var saving = event.target.parentNode.children[3].children[2].innerText;
+    var brand = event.target.parentNode.children[4].children[0].innerText;
+    var type = event.target.parentNode.children[4].children[1].innerText;
+    var img2 = event.target.parentNode.children[4].children[2].getAttribute("src");
+    var img3 = event.target.parentNode.children[4].children[3].getAttribute("src");
+
+    var obj = {
+      imgs: imgs,
+      discount: discount,
+      description: description,
+      rprice: rprice,
+      price: price,
+      saving: saving,
+      brand: brand,
+      type: type,
+      img2: img2,
+      img3: img3
+    };
+    localStorage.setItem("product-page-item", JSON.stringify(obj));
+    window.location.href = "product_page.html";
+  });
+
+  var mydiv = document.createElement("div");
+  mydiv.setAttribute("id", "mydiv");
+
+  var brand = document.createElement("p");
+  brand.innerText = elem.brand_name;
+
+  var type = document.createElement("p");
+  type.innerText = elem.productType;
+
+  var img2 = document.createElement("img");
+  img2.setAttribute("src", elem.image_url1);
+
+  var img3 = document.createElement("img");
+  img3.setAttribute("src", elem.image_url2);
+
+  mydiv.append(brand, type, img2, img3);
+  div.append(image, extrasave, name, pricebox);
+  div.append(mydiv);
+
+  parentDiv.append(div);
+});
+}

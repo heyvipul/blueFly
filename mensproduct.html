@@ -1,120 +1,115 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mens Product</title>
     <script src="https://kit.fontawesome.com/618d9878ed.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="css/menStyles.css" />
-
-
-
 </head>
+
 <body>
     <div id="whole">
-    <div id="sec">
-    <select id="type" onchange="handleprice()">
-        <option value="">Price Filter</option>
-        <option value="lth">LOW TO HIGH</option>
-        <option value="htl">HIGH TO LOW</option>
-    
-    </select>
-    <select id="types">
-        <option value="">Brand Section</option>
-        <option value="bata">bata</option>
-        <option value="louis">louis phillip</option>
-        <option value="peter">peter england</option>
-        <option value="gucci">gucci</option>
-        <option value="levis">levis</option>
-        <option value="mochi">mochi</option>
-        <option value="biba">biba</option>
-        <option value="killer">killer</option>
-    </select>
-    <select id="types">
-        <option value="">COLOR ITEM</option>
-        <option value="black ">black</option>
-        <option value="red">red</option>
-        <option value="yellow">yellow</option>
-        <option value="blue">blue</option>
-        <option value="green">green</option>
-    </select>
-    <select id="types">
-        <option value="">PRICE  OFF%</option>
-        <option value="OFF">60%OFF</option>
-        <option value="OF">30%OFF</option>
-    </select>
-    <select id="types">
-        <option value="">CONDITION   . </option>
-        <option value="new">NEW</option>
-        <option value="PRE">PREOWNED</option>
-    </select>
+        <div id="sorting">
+            <select id="handlePrice" onchange="handlePrice()">
+                <option value="">Price Filter</option>
+                <option value="lth">LOW TO HIGH</option>
+                <option value="htl">HIGH TO LOW</option>
+            </select>
 
+            <select id="brandSection">
+                <option value="">Brand Section</option>
+                <option value="bata">bata</option>
+                <option value="louis">louis phillip</option>
+                <option value="peter">peter england</option>
+                <option value="gucci">gucci</option>
+                <option value="levis">levis</option>
+                <option value="mochi">mochi</option>
+                <option value="biba">biba</option>
+                <option value="killer">killer</option>
+            </select>
 
+            <select id="colorItem">
+                <option value="">COLOR ITEM</option>
+                <option value="black">black</option>
+                <option value="red">red</option>
+                <option value="yellow">yellow</option>
+                <option value="blue">blue</option>
+                <option value="green">green</option>
+            </select>
+
+            <select id="priceOff">
+                <option value="">PRICE OFF%</option>
+                <option value="60">60% OFF</option>
+                <option value="30">30% OFF</option>
+            </select>
+
+            <select id="pConditionOt">
+                <option value="">CONDITION</option>
+                <option value="new">NEW</option>
+                <option value="pre">PREOWNED</option>
+            </select>
+        </div>
+
+        <div id="container">
+            <img id="pic" src="https://cdn.shopify.com/s/files/1/0254/8878/5498/files/MEMORIAL_DAY_PROMO_TOP_BANNER_1.jpg?v=1685038900"
+                alt="subpic">
+
+            <h1>Mens Product</h1>
+
+            <div id="parent"></div>
+
+            <img id="pic" src="https://cdn.shopify.com/s/files/1/0254/8878/5498/files/SHOP_PAY_BANNER_Top_1.jpg?v=1684348361"
+                alt="offerpic">
+        </div>
     </div>
-<div id="container">
 
-  <img  id="pic" src="https://cdn.shopify.com/s/files/1/0254/8878/5498/files/MEMORIAL_DAY_PROMO_TOP_BANNER_1.jpg?v=1685038900" alt="subpic">
-
-  <h1>Mens Product</h1>
-  
-    <div id="parent">
-    
-
-    </div>
-<img id="pic" src="https://cdn.shopify.com/s/files/1/0254/8878/5498/files/SHOP_PAY_BANNER_Top_1.jpg?v=1684348361" alt="offerpic">
-</div>
-
-    </div>
-
-<!-- footerpart..... -->
     <footer>
-      <div class="footer_container">
+        <div class="footer_container">
+  
+            <div>
+                <h3>CONTACT US</h3>
+                <p><a href="https://www.bluefly.com/pages/contact-us">Contact Us</a></p>
+                <p><a href="">Frequently Asked</a></p>
+                <p><a href="">Shipping Returns</a></p>
+                <p><a href="">Shipping & Returns</a></p>
+                <p><a href="">Pre-Owned Guide</a></p>
+                <p><a href="">Sell on Bluefly</a></p>
+            </div>
+  
+            <div>
+                <h3>PRIVACY POLICY</h3>
+                <p><a href="">Terms & Condition</a></p>
+                <p><a href="">Do not sell my personal information</a></p>
+                <p><a href="">Shop Pay Installments</a></p>
+            </div>
+  
+            <div>
+                <h3>SIGN UP AND SAVE</h3>
+                <p>Subscribe to get exclusive offers on designer brands</p>
+                    <div class="insta">
+                        <p><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></p>
+                        <p><a href="https://www.facebook.com/campaign/landing.php?campaign_id=14884913640&extra_1=s%7Cc%7C589460569891%7Cb%7Cfacebook%20signin%7C&placement=&creative=589460569891&keyword=facebook%20signin&partner_id=googlesem&extra_2=campaignid%3D14884913640%26adgroupid%3D128696221832%26matchtype%3Db%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-3821998899%26loc_physical_ms%3D1007786%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=CjwKCAjw67ajBhAVEiwA2g_jENhml6ND84txlTbr2sE378cfhYIXXyYx0i-c8hOGcf321uzbyuJQshoChkoQAvD_BwE"><i class="fa-brands fa-facebook-f"></i></a></p>
+                    </div>
+            </div>  
+        </div>
+  
+        <div class="bottom_footer">
+            <div>
+                <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/Untitled_2_.png_5_x104@2x.png?v=1620852820" alt="image">
+            </div>
+        
+            <div>
+                <p>© 2023 Bluefly 1998-2020 BLUEFLY.COM OR ITS AFFILIATES ALL RIGHTS RESERVED.</p>
+            </div>
+  
+        </div>
+     
+    </footer>
+  
 
-          <div>
-              <h3>CONTACT US</h3>
-              <p><a href="https://www.bluefly.com/pages/contact-us">Contact Us</a></p>
-              <p><a href="">Frequently Asked</a></p>
-              <p><a href="">Shipping Returns</a></p>
-              <p><a href="">Shipping & Returns</a></p>
-              <p><a href="">Pre-Owned Guide</a></p>
-              <p><a href="">Sell on Bluefly</a></p>
-          </div>
 
-          <div>
-              <h3>PRIVACY POLICY</h3>
-              <p><a href="">Terms & Condition</a></p>
-              <p><a href="">Do not sell my personal information</a></p>
-              <p><a href="">Shop Pay Installments</a></p>
-          </div>
-
-          <div>
-              <h3>SIGN UP AND SAVE</h3>
-              <p>Subscribe to get exclusive offers on designer brands</p>
-                  <div class="insta">
-                      <p><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></p>
-                      <p><a href="https://www.facebook.com/campaign/landing.php?campaign_id=14884913640&extra_1=s%7Cc%7C589460569891%7Cb%7Cfacebook%20signin%7C&placement=&creative=589460569891&keyword=facebook%20signin&partner_id=googlesem&extra_2=campaignid%3D14884913640%26adgroupid%3D128696221832%26matchtype%3Db%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-3821998899%26loc_physical_ms%3D1007786%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=CjwKCAjw67ajBhAVEiwA2g_jENhml6ND84txlTbr2sE378cfhYIXXyYx0i-c8hOGcf321uzbyuJQshoChkoQAvD_BwE"><i class="fa-brands fa-facebook-f"></i></a></p>
-                  </div>
-          </div>  
-      </div>
-
-      <div class="bottom_footer">
-          <div>
-              <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/Untitled_2_.png_5_x104@2x.png?v=1620852820" alt="image">
-          </div>
-      
-          <div>
-              <p>© 2023 Bluefly 1998-2020 BLUEFLY.COM OR ITS AFFILIATES ALL RIGHTS RESERVED.</p>
-          </div>
-
-      </div>
-   
-  </footer>
 
 </body>
-
 <script src="SCRIPTS/menproduct.js"></script>
-
 </html>
-  
