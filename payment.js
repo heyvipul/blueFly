@@ -71,7 +71,7 @@ if (this.checked) {
 }
 });
 
-function submitForm() {
+function showAlert() {
     alert("Payment completed successfully!");
   }
 

@@ -142,3 +142,37 @@ table {
   border-radius: 6px;
   border: 1px solid #ccc;
 }
+
+/* media queries! */
+
+@media only screen and (max-width: 768px) {
+  /* Styles for screens up to 768px */
+  .payment-options {
+    width: 100%;
+  }
+
+  .right-column {
+    display: none;
+  }
+
+  .left-column {
+    flex: 1 0 100%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /* Styles for screens up to 480px */
+  .flex2 {
+    display: block;
+  }
+
+  .flex2 > div {
+    width: 100%;
+  }
+}
+
+
+
+
+
+
