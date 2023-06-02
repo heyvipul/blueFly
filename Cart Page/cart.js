@@ -1,4 +1,4 @@
-var MensData = JSON.parse(localStorage.getItem("cartlist")) || [];
+var MensData = JSON.parse(localStorage.getItem("cartData")) || [];
 
 if (MensData.length === 0) {
     document.getElementById("cart-container").textContent = "THERE ARE NO PRODUCTS! DO SOME SHOPPING!";
@@ -66,7 +66,7 @@ function displayCart() {
 
 function delRow(startIndex) {
     MensData.splice(startIndex, 1);
-    localStorage.setItem("cartlist", JSON.stringify(MensData));
+    localStorage.setItem("cartData", JSON.stringify(MensData));
 }
 
 function updatePrice(index, quantity, priceElement) {
@@ -74,7 +74,7 @@ function updatePrice(index, quantity, priceElement) {
     var totalPrice = Number(product.price) * Number(quantity);
     product.quantity = Number(quantity);
     priceElement.textContent = "$ " + totalPrice;
-    localStorage.setItem("cartlist", JSON.stringify(MensData));
+    localStorage.setItem("cartData", JSON.stringify(MensData));
 }
 
 function applyCoupon() {
