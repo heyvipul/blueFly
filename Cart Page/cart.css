@@ -306,6 +306,10 @@ button{
     font-family:cursive;
     font-size: 25px;
 }
+.checkout a{
+    text-decoration: none;
+    color: white;
+}
 
 
 /* Footer Css  */
