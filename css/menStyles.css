@@ -207,17 +207,21 @@ header>#middle>ul>li{
         text-align: center;
         color: rgb(88, 5, 5);
       }
+      #sorting{
+        display:flex;
+        flex-direction: column;
+     }
       #handlePrice{
         border:0px;
          margin-top: 100px;
-         margin-right: -40px;
+         margin-right: 40px;
         padding: 45px 48px 45px 48px;
         background-color: whitesmoke;
       }
       #brandSection{
         border:0px;
          margin-top: 10px;
-         margin-right: -40px;
+         margin-right: 40px;
         padding: 45px 48px 45px 48px;
         background-color: whitesmoke;
       }
@@ -225,21 +229,21 @@ header>#middle>ul>li{
       #colorItem{
         border:0px;
          margin-top: 10px;
-         margin-right: -40px;
+         margin-right: 40px;
         padding: 45px 48px 45px 48px;
         background-color: whitesmoke;
       }
       #priceOff{
         border:0px;
          margin-top: 10px;
-         margin-right: -40px;
+         margin-right: 40px;
         padding: 45px 48px 45px 48px;
         background-color: whitesmoke;
       }
       #pConditionOt{
         border:0px;
          margin-top: 10px;
-         margin-right: -40px;
+         margin-right: 40px;
         padding: 45px 48px 45px 48px;
         background-color: whitesmoke;
       }
