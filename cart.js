@@ -1,24 +1,25 @@
 var MensData = JSON.parse(localStorage.getItem("cartData")) || [];
 
-if (MensData.length === 0) {
+/*if (MensData.length === 0) {
     document.getElementById("cart-container").textContent = "THERE ARE NO PRODUCTS! DO SOME SHOPPING!";
-} else {
+} else {*/
     displayCart();
     Subtotal();
     Total();
-}
+//}
 
 function displayCart() {
     var tbody = document.querySelector("tbody");
     tbody.innerHTML = ""; // Clear existing table rows
 
     MensData.forEach(function (elem, i) {
+
         var tr = document.createElement("tr");
 
         var image = document.createElement("img");
-        image.setAttribute("src", elem.image_url);
+        image.setAttribute("src", elem.image);
         image.setAttribute("alt", elem.name);
-
+       
         var td1 = document.createElement("td");
         td1.appendChild(image);
 
@@ -133,6 +134,8 @@ function Total() {
     p1.textContent = "$ " + total.toFixed(2); 
 
     finalTotalContainer.append(p, p1);
+
+    localStorage.setItem("Checkout_payment",JSON.stringify(p1.textContent))
 }
 
 function calculateTotal() {
@@ -143,4 +146,3 @@ function calculateTotal() {
 
     return total;
 }
-

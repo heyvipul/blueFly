@@ -105,6 +105,7 @@ header>#middle>ul>li{
     display: flex;
     flex-direction: row;
     margin-top: -10px;
+    z-index: 200;
 }
 @media(min-width:769px){
 #middle>ul>li:hover .mega_menu{

@@ -285,21 +285,20 @@ data.forEach(function(elem) {
     var type = event.target.parentNode.children[4].children[1].innerText;
     var img2 = event.target.parentNode.children[4].children[2].getAttribute("src");
     var img3 = event.target.parentNode.children[4].children[3].getAttribute("src");
-
-    var obj = {
-      imgs: imgs,
-      discount: discount,
-      description: description,
-      rprice: rprice,
-      price: price,
-      saving: saving,
-      brand: brand,
-      type: type,
-      img2: img2,
-      img3: img3
-    };
-    localStorage.setItem("product-page-item", JSON.stringify(obj));
-    window.location.href = "product_page.html";
+    var obj={};
+    obj["imgs"]=imgs;
+    obj["discount"]=discount;
+    obj["discription"]=description;
+    obj["rprice"]=rprice;
+    obj["price"]=price;
+    obj["saving"]=saving;
+    obj["brand"]=brand;
+    obj["type"]=type;
+    obj["img2"]=img2;
+    obj["img3"]=img3;
+    localStorage.setItem("product-pge-item",JSON.stringify(obj));
+   
+    window.location.href = "product.html";
   });
 
   name.addEventListener("click", function() {
@@ -314,20 +313,20 @@ data.forEach(function(elem) {
     var img2 = event.target.parentNode.children[4].children[2].getAttribute("src");
     var img3 = event.target.parentNode.children[4].children[3].getAttribute("src");
 
-    var obj = {
-      imgs: imgs,
-      discount: discount,
-      description: description,
-      rprice: rprice,
-      price: price,
-      saving: saving,
-      brand: brand,
-      type: type,
-      img2: img2,
-      img3: img3
-    };
-    localStorage.setItem("product-page-item", JSON.stringify(obj));
-    window.location.href = "product_page.html";
+    var obj={};
+    obj["imgs"]=imgs;
+    obj["discount"]=discount;
+    obj["discription"]=description;
+    obj["rprice"]=rprice;
+    obj["price"]=price;
+    obj["saving"]=saving;
+    obj["brand"]=brand;
+    obj["type"]=type;
+    obj["img2"]=img2;
+    obj["img3"]=img3;
+    localStorage.setItem("product-pge-item",JSON.stringify(obj));
+   
+    window.location.href = "product.html";
   });
 
   var mydiv = document.createElement("div");

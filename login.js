@@ -4,12 +4,20 @@ document.querySelector("#login").addEventListener("submit",function(){
     event.preventDefault();
     var email=document.getElementById("mail").value;
     var password=document.getElementById("password").value;
+    console.log(login_details);
+    if(login_details.length==0){
+        if(alrts){
+            addAlrt();
+            alrts=false;
+        }
+    }
     if(email=="" || password==""){
             if(alrts){
                 addAlrt();
                 alrts=false;
             }
         }
+     
     login_details.forEach(function(ele){
        if(ele.email==email && password==ele.password){
             removeAlrt();

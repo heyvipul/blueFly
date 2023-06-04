@@ -358,7 +358,7 @@ function loadItems(){
       obj["img2"]=img2;
       obj["img3"]=img3;
       localStorage.setItem("product-pge-item",JSON.stringify(obj));
-      window.location.href="product_details.html";
+      window.location.href="product.html";
 
       console.log();  
     });
@@ -387,7 +387,7 @@ item.children[1].children[0].addEventListener("click",function(){  //Abhishek Ad
   obj["img2"]=img2;
   obj["img3"]=img3;
   localStorage.setItem("product-pge-item",JSON.stringify(obj));
-  window.location.href="product_details.html";
+  window.location.href="product.html";
 
    console.log();  
 
@@ -418,7 +418,7 @@ item.children[1].children[0].addEventListener("click",function(){  //Abhishek Ad
       obj["img2"]=img2;
       obj["img3"]=img3;
       localStorage.setItem("product-pge-item",JSON.stringify(obj));
-      window.location.href="product_details.html";
+      window.location.href="product.html";
 
        console.log();  
 
@@ -489,7 +489,7 @@ function displayNew_arrival(){
     obj["img2"]=img2;
     obj["img3"]=img3;
     localStorage.setItem("product-pge-item",JSON.stringify(obj));
-    window.location.href="product_details.html";
+    window.location.href="product.html";
 
     console.log();  
 
@@ -523,7 +523,7 @@ function displayNew_arrival(){
     obj["img2"]=img2;
     obj["img3"]=img3;
     localStorage.setItem("product-pge-item",JSON.stringify(obj));
-    window.location.href="product_details.html";
+    window.location.href="product.html";
 
     console.log(event.target.parentNode);  
 
@@ -589,7 +589,7 @@ function displayNew_arrival(){
     obj["img2"]=img2;
     obj["img3"]=img3;
     localStorage.setItem("product-pge-item",JSON.stringify(obj));
-    window.location.href="product_details.html";
+    window.location.href="product.html";
 
     console.log(event.target.parentNode);  
 
@@ -623,7 +623,7 @@ function displayNew_arrival(){
     obj["img2"]=img2;
     obj["img3"]=img3;
     localStorage.setItem("product-pge-item",JSON.stringify(obj));
-    window.location.href="product_details.html";
+    window.location.href="product.html";
           
     console.log(event.target.parentNode);  
 
@@ -656,6 +656,5 @@ function displayNew_arrival(){
         trending_now_parent.append(div);
       })
     }
-    const galleryItems=document.querySelector("recommended_gallery_item").children;
-    console.log(galleryItems)
+   
  

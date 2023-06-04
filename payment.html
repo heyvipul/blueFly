@@ -174,4 +174,10 @@
 
 
 </body>
+<script>
+  var data=localStorage.getItem("Checkout_payment");
+  console.log(data);
+  document.getElementById("subtotal").innerText=data;
+  document.getElementById("Finaltotal").innerText=data;
+</script>
 </html>
