@@ -107,14 +107,14 @@ header>#middle>ul>li{
     margin-top: -10px;
     z-index: 200;
 }
-@media(min-width:769px){
+/* @media(min-width:769px){ */
 #middle>ul>li:hover .mega_menu{
     opacity: 1;
     visibility: visible;
     top:100%;
     padding: 10px;
 }
-}
+/* } */
 .mega_menu_items>img{
     margin-top: 26px;
 }
@@ -545,6 +545,7 @@ body>#offerLine>img{
     margin: auto;
     overflow: hidden;
     padding: 25px 0;
+    margin-bottom: -130px;
 }
 #women_section_offer_2>div{
     display: block;
@@ -584,6 +585,9 @@ body>#offerLine>img{
 }
 
 @media only screen and (min-width: 375px) and (max-width: 667px){
+    #top{
+        margin-left: 75px;
+    }
     #Hero-carousel .c-item{
         height: 357px;
     }
@@ -640,6 +644,9 @@ body>#offerLine>img{
         height: 160px;
     }
     /* shop_by_category_hp */
+    #shop_by_category_hp{
+        margin-left: 10px;
+    }
     #shop_by_category_hp_div{
         grid-template-columns: repeat(2,1fr);
         margin: 0;
@@ -671,6 +678,9 @@ body>#offerLine>img{
         font: 11px "Futura",sans-serif;
     }
     /* new_arrival */
+    #god_father{
+        margin-left: 0px;
+    }
     #god_father>h2{
         font: 27.77px "Tiemann",serif;
     }
@@ -704,7 +714,9 @@ body>#offerLine>img{
         justify-content: space-around;
     }
     /* trending now */
-    
+    #god_father_2{
+        margin-left: 0px;
+    }
     #god_father_2>h2{
         font: 27.77px "Tiemann",serif;
     }
@@ -740,14 +752,16 @@ body>#offerLine>img{
         justify-content: space-around;
     }
     #women_section_offer_2{
-        margin-left: 30px;
+        margin-left: 35px;
         display: grid;
         grid-template-columns: repeat(1,1fr);
+        margin-bottom: -50px;
     }
     #women_section_offer_2>div{
         width: 90%;
         padding: 0;
         margin-left: 0px;
+        margin-bottom: -50px;
     }
     #women_section_offer_2>div h3{
         font-size: 22.61px;
@@ -766,7 +780,7 @@ body>#offerLine>img{
     display: none;
 }
 
-@media only screen and (min-width: 375px) and (max-width: 667px){
+/* @media only screen and (min-width: 375px) and (max-width: 667px){
     #women_section_offer{
         margin: 40px;
     }
@@ -787,9 +801,9 @@ body>#offerLine>img{
     }
     #Hero-carousel .c-item button{
         font: 11px "Futura",sans-serif;
-    }
+    } */
     /* pagination */
-    #pagination #controlph>#recommended_p{
+    /* #pagination #controlph>#recommended_p{
         padding-left: 30px;
         font:22.61px "Tiemann",serif;
         width: 80%;
@@ -807,9 +821,9 @@ body>#offerLine>img{
     }
     #pagination #content>div{
         margin-left: -10px;
-    }
+    } */
     /* women offer */
-    #women_section_offer{
+    /* #women_section_offer{
         display: grid;
         grid-template-columns: repeat(1,1fr);
     }
@@ -824,9 +838,9 @@ body>#offerLine>img{
     }
     #women_section_offer>div:nth-child(3)>div:nth-child(2){
         height: 160px;
-    }
+    } */
     /* shop_by_category_hp */
-    #shop_by_category_hp_div{
+    /* #shop_by_category_hp_div{
         grid-template-columns: repeat(2,1fr);
         margin: 0;
         padding-left: 25px;
@@ -855,9 +869,9 @@ body>#offerLine>img{
     }
     #Hero-carousel_2 .c-item button{
         font: 11px "Futura",sans-serif;
-    }
+    } */
     /* new_arrival */
-    #god_father>h2{
+    /* #god_father>h2{
         font: 27.77px "Tiemann",serif;
     }
     #god_father>a{
@@ -888,10 +902,10 @@ body>#offerLine>img{
     #new_arrival_parent>div>div{
         display: flex;
         justify-content: space-around;
-    }
+    } */
     /* trending now */
     
-    #god_father_2>h2{
+    /* #god_father_2>h2{
         font: 27.77px "Tiemann",serif;
     }
     #god_father_2>a{
@@ -944,8 +958,9 @@ body>#offerLine>img{
     #women_section_offer_2>div a{
         font-size: 10px;
     }
-}
+} */
 @media only screen and (min-width: 768px) and (max-width: 1024px){
+    /* iPad mini */
     /* body>#offerLine>img{
         width: 110%;
     }
@@ -961,6 +976,11 @@ body>#offerLine>img{
         margin: auto;
         align-items: center;
     } */
+    /* nav top */
+    #top{
+        margin-left:280px;
+    }
+
     /* women offer */
 
     #women_section_offer{
@@ -991,7 +1011,7 @@ body>#offerLine>img{
     }
     #new_arrival_parent{
         margin: auto;
-        margin-left: 5px;
+        margin-left: -90px;
     }
     #new_arrival_parent>div{
         width: 100%;
@@ -1006,7 +1026,7 @@ body>#offerLine>img{
     }
     #trending_now_parent{
         margin: auto;
-        margin-left: 70px;
+        margin-left: 20px;
         margin-bottom: -150px;
     }
     #trending_now_parent>div{
@@ -1042,6 +1062,7 @@ body>#offerLine>img{
     }
     #women_section_offer_2{
         width: 100%;
+        margin-bottom: -50px;
     }
     #women_section_offer_2 .women_text{
         width: 250px;
