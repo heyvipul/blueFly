@@ -16,18 +16,22 @@ Bootstrap
 https://647b7f39c08dfa29668bc92b--astonishing-kringle-db26ae.netlify.app/index.html
 
 # Authors
-Vikas Chaturvedi :
+Vipul Girhe 
+
+https://github.com/heyvipul
+
+Vikas Chaturvedi 
  
 https://github.com/Vikaschaturvedi167
 
-Anand Kumar :
+Anand Kumar 
 
 https://github.com/AnandAK07
 
-Abhishek Tiwari :
+Abhishek Tiwari 
 
 https://github.com/DevWebAbhi
 
-Jageshwar :
+Jageshwar 
 
 https://github.com/Jageshwar2000
