@@ -68,7 +68,7 @@ let  items_r=[
   {  brand_name:"SAINT LAURENT",
    productType:"MEN SHOES",
      name:"SAINT LAURENT DURAN LEATHER LOAFER",
-    image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/files/1312489119_RLLZ_1_b84744a9-c81f-4574-b36c-37211342cc74_1800x1800.jpg?v=1685226150",
+    image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/files/1312489119_RLLZ_1_1800x1800.jpg?v=1685731819",
     image_url1:"https://cdn.shopify.com/s/files/1/0248/3473/6191/files/1312489119_RLLZ_2_1800x1800.jpg?v=1685226151",
     image_url2:"https://cdn.shopify.com/s/files/1/0248/3473/6191/files/1312489119_RLLZ_3_1800x1800.jpg?v=1685226152",
     strikedoffprice: "$1,508",
