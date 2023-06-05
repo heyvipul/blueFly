@@ -13,7 +13,7 @@ JavaScript (LocalStorage, DOM)
 Bootstrap
 
 # Deployment link
-https://647b7f39c08dfa29668bc92b--astonishing-kringle-db26ae.netlify.app/index.html
+https://647cc4c365687c4e3c6b2b20--chimerical-madeleine-52c26c.netlify.app/
 
 # Authors
 Vipul Girhe 
