@@ -1,3 +1,4 @@
+message();
 function handlePaymentOption() {
     var paymentMethod = document.querySelector('input[name="paymentMethod"]:checked').value;
     var cardDetailsForm = document.getElementById("cardDetailsForm");
@@ -36,7 +37,7 @@ function handlePaymentOption() {
     }
 
   }
-
+ 
   function adjustButtonWidth(button) {
    var textLength = button.textContent.length;
   var width = textLength * 10 + 20; 
@@ -116,4 +117,25 @@ function calculateTotal() {
   }, 0);
 
   return total;
+}
+
+function message(){
+  alert("CARD NUMBER:12345, NAME:VISA,EXPIRY:11/2030,SECURITY:123");
+}
+function PayNow(){
+  let cardNumber=document.getElementById("cardNumber").value;
+  let nameOnCard=document.getElementById("nameOnCard").value;
+  let expirationDate=document.getElementById("expirationDate").value;
+  let securityCode=document.getElementById("securityCode").value;
+  if(cardNumber=="" || nameOnCard=="" || expirationDate=="" || securityCode==""){
+    alert("Please fill all details");
+    return;
+  }
+  if(cardNumber=="12345" && nameOnCard=="VISA" && expirationDate=="11/2030" && securityCode=="123"){
+    showAlert();
+  }else{
+    alert("Please fill correct details");
+   
+  }
+  
 }
