@@ -3,7 +3,10 @@ About BlueFly
 
 In this project we have tried to make a clone of BlueFly Ecommerce Webiste. 
 
-# Technology Stack Used
+### Deployment link
+https://647cc4c365687c4e3c6b2b20--chimerical-madeleine-52c26c.netlify.app/
+
+### Technology Stack Used
 HTML5 
 
 CSS
@@ -12,10 +15,8 @@ JavaScript (LocalStorage, DOM)
 
 Bootstrap
 
-# Deployment link
-https://647cc4c365687c4e3c6b2b20--chimerical-madeleine-52c26c.netlify.app/
 
-# Authors
+### Authors
 Vipul Girhe 
 
 https://github.com/heyvipul
